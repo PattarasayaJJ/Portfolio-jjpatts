@@ -1,0 +1,103 @@
+.works-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    position: relative;
+  }
+  
+  .works-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .works-img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 1rem;
+    border: 4px solid #ec4899;
+    object-fit: cover;
+  }
+  
+  /* 🏹 Arrow Styling */
+  .arrow {
+    position: absolute;
+    width: 100px;
+    height: auto;
+  }
+  
+  /* ปรับตำแหน่งลูกศรตามแต่ละภาพ */
+  .arrow-1 {
+    top: -3rem;
+    right: 0;
+    transform: rotate(10deg);
+  }
+  
+  .arrow-2 {
+    top: -3rem;
+    left: 0;
+    transform: rotate(-20deg);
+  }
+  
+  .arrow-3 {
+    top: -3rem;
+    right: 0;
+    transform: rotate(10deg);
+  }
+  
+  .arrow-4 {
+    top: -3rem;
+    left: 0;
+    transform: rotate(-15deg);
+  }
+  
+  /* 📝 ข้อความอธิบาย */
+  .works-text {
+    color: #6d28d9; /* Tailwind purple-700 */
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  /* 📱 Mobile */
+  @media (max-width: 767px) {
+    .works-img {
+      width: 100%;
+    }
+  
+    .arrow {
+      width: 50px;
+    }
+  
+    .works-text {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* 💻 Desktop */
+  @media (min-width: 768px) {
+    .works-container {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .works-item {
+      width: calc(50% - 1rem);
+    }
+  
+    .arrow {
+      width: 70px;
+    }
+  
+    .works-text {
+      font-size: 1.1rem;
+      text-align: left;
+      margin-top: 0.8rem;
+    }
+  }
+  
