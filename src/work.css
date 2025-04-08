@@ -47,6 +47,8 @@
   .project-title {
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+
     /* เดิมเป็น color: #6d28d9 แต่เราย้ายไปกำหนดใน .final / .mini แทน */
   }
   
@@ -70,6 +72,8 @@
     padding: 0.5rem 1rem;
     border-radius: 9999px;
     font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+
   }
   
   /* --------------- Responsive --------------- */
@@ -87,6 +91,10 @@
     .project-image {
       max-width: 1000px;
     }
+    .text-final{
+      font-family: 'Kanit', sans-serif;
+
+    }
   }
   
   /* มือถือ (จอเล็ก) */
@@ -97,6 +105,11 @@
   
     .project-image {
       max-width: 100%;
+    }
+    .text-final{
+      font-family: 'Kanit', sans-serif;
+      text-align: center;
+
     }
   }
   

@@ -32,6 +32,13 @@ export function Aboutme() {
 
   return (
     <div className="about-container">
+            <nav className="breadcrumb">
+        <a href="/" className="breadcrumb-link">
+          Home
+        </a>
+        <span className="breadcrumb-separator">/</span>
+        <span className="breadcrumb-current">About Me</span>
+      </nav>
       <div className="about-columns">
         <div className="profile-column">
           <div className="profile-card">

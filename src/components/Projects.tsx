@@ -5,7 +5,6 @@ export function Projects() {
   return (
     <section className="projects-section">
       <div className="projects-container">
-        {/* Final Project */}
         <a href="/final-project" className="project-link">
           <div className="final-project-card">
             <div className="final-project-content">
@@ -56,7 +55,6 @@ export function Projects() {
               title="Mini Project"
               icon="/figma.png"
               image="/classcafe.png"
-
               gradient="from-purple-100 to-pink-200"
             />
           </a>

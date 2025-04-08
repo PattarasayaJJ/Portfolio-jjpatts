@@ -1,8 +1,9 @@
 /* ---- Section & Container ---- */
 .projects-section {
-    width: 100%;
-    padding: 3rem 2rem;
-    background-color: #ffffff;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+
   }
   
   .projects-container {
@@ -105,13 +106,12 @@
     }
     
     .final-project-content {
-      flex-direction: column; /* ซ้อนกันใน Mobile */
+      flex-direction: column; 
     }
     
     .final-project-text,
     .final-project-image {
       width: 100%;
-      text-align: center;
     }
     
     .final-project-title {
@@ -121,6 +121,7 @@
     .icon-wrapper {
       width: 2rem;
       height: 2rem;
+ 
     }
     
     .project-screenshot {

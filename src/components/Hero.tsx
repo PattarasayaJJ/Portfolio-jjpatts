@@ -27,7 +27,7 @@ export function Hero() {
                 "จุดเริ่มต้นของการเส้นใน UX/UI คือการได้เรียนวิชานี้ตอนปี1
                 มีความสนใจชอบออกแบบ กำไว้รู้แค่ว่าตัวเองอยากทำหลายอย่างมาก
                 และต้องการพัฒนาตัวเอง จึงเริ่มต้นประสบการณ์จากการเป็น Teaching
-                Assistant (TA) ในช่วงปี3และ:04 ได้ลองและเรียนรู้เพิ่มเติม
+                Assistant (TA) ในช่วงปี3และ4 ได้ลองและเรียนรู้เพิ่มเติม
                 ช่วยให้คำแนะนำโปรเจคต่างๆของนักศึกษาในรายวิชา"
               </p>
               <p className="hero-name">Pattarasaya Srisanga</p>
@@ -39,12 +39,9 @@ export function Hero() {
 
        {/* --- Bottom Section --- */}
        <section className="hero-section">
-        {/* ใส่คอนเทนเนอร์ที่เป็น gradient + container เดิม */}
         <div className="bottom-container">
-          {/* หัวข้อ Experience */}
           <h2 className="experience-title">experience</h2>
 
-          {/* การ์ดข้างใน */}
           <div className="bottom-card">
             <img
               src="/ta.png"  // ปรับเส้นทางรูปตามต้องการ

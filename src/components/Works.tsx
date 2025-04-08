@@ -2,12 +2,21 @@ import '../work.css';
 
 export function Works() {
   return (
-    <section className="projects-section">
+    <div className="projects-section">
+      <nav className="breadcrumb">
+        <a href="/" className="breadcrumb-link">
+          Home
+        </a>
+        <span className="breadcrumb-separator">/</span>
+        <span className="breadcrumb-current">Works</span>
+      </nav>
       <div className="projects-container">
-        {/* Final Project Card */}
+      
         <div className="project-card final">
-          <h2 className="project-title">Final Project</h2>
-          {/* รูปเดียวที่มี 3 หน้าจอรวมกัน */}
+          <h2 className="project-title">Final Project - แอปพลิเคชันช่วยเหลือกายภาพบำบัดที่บ้าน</h2>
+          <div className='text-final'>
+            โปรเจคนี้เริ่มตั้งแต่ทำ User Research แล้วจึงนำมาออกแบบเนื่องจากผู้ใช้ส่วนมากคือผู้สูงอายุแล้วป่วย การออกแบบจึงต้องออกแบบให้ใช้งานง่ายที่สุดไม่ซับซ้อน
+          </div>
           <img
             src="/googleplay.png"
             alt="Final Project"
@@ -24,6 +33,7 @@ export function Works() {
             <span>#MongoDB</span>
             <span>#NodeJS</span>
           </div>
+          
         </div>
 
         {/* Mini Project 1 */}
@@ -52,6 +62,6 @@ export function Works() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
