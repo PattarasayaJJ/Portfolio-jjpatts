@@ -6,7 +6,7 @@ import { Projects } from './components/Projects';
 import { Works } from './components/Works';
 import { Aboutme } from './components/Aboutme' ;
 import { Experience } from './components/Experience';
-import { Finalproject } from './components/Finaproject'
+import { Finalproject } from './components/Finalproject'
 import { Miniproject } from './components/Miniproject';
 import { Footer } from './components/Footer';
 
