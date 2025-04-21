@@ -47,7 +47,8 @@
     width: 40%;
   }
   .final-project-image {
-    width: 60%;
+    width: 100%;
+    height: auto;
   }
   
   /* ---- Final Project Title ---- */
@@ -62,7 +63,6 @@
     -webkit-text-fill-color: transparent;
   }
   
-  /* ---- Final Project Icons ---- */
   .final-project-icons {
     display: flex;
     align-items: center;
@@ -82,9 +82,10 @@
   /* ---- Project Screenshot ---- */
   .project-screenshot {
     width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
   }
   
   /* ---- Mini Projects Grid ---- */
@@ -132,4 +133,28 @@
       gap: 1.5rem;
     }
   }
+  /* ---- Slider Container ---- */
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 300px; /* ปรับให้เหมาะกับขนาดภาพของคุณ */
+}
+
+/* ---- Slider Wrapper ---- */
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Individual Slide Image ---- */
+.slider-image {
+  min-width: 100%;
+  height: 100%;
+  object-fit: contain; /* หรือ "cover" ถ้าอยากให้ภาพเต็มพื้นที่ */
+}
+
   

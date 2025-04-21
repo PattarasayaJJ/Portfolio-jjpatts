@@ -14,11 +14,12 @@ export function Aboutme() {
     { name: '#Interaction Design', type: 'ux' },
     { name: '#Design System', type: 'ux' },
     { name: '#Manual Testing', type: 'ux' },
-    { name: '#Automated Testing (Postman)', type: 'ux' },
+    { name: '#Automated Testing ', type: 'ux' },
     { name: '#Figma', type: 'tool' },
     { name: '#Adobe XD', type: 'tool' },
     { name: '#Power BI', type: 'tool' },
     { name: '#Postman', type: 'tool' },
+    { name: '#cypress.io', type: 'tool' },
     { name: '#Git', type: 'tech' },
     { name: '#HTML', type: 'tech' },
     { name: '#CSS', type: 'tech' },
@@ -28,7 +29,7 @@ export function Aboutme() {
     { name: '#MongoDB', type: 'tech' },
   ];
 
-  const softSkills = ['#พร้อมเรียนรู้ตลอดเวลา', '#ทำงานเป็นทีมได้', '#มีความยืดหยุ่น'];
+  const softSkills = ['#Team Collaboration', '#Time Management ', '#Continuous Learning'];
 
   return (
     <div className="about-container">
@@ -39,47 +40,56 @@ export function Aboutme() {
         <span className="breadcrumb-separator">/</span>
         <span className="breadcrumb-current">About Me</span>
       </nav>
+
+      
       <div className="about-columns">
         <div className="profile-column">
+          
           <div className="profile-card">
+            
             <div className="profile-top">
               <div className="avatar-wrapper">
                 <img
-                  src="/me.jpg"
+                  src="/jejey.png"
                   alt="Profile"
                 />
               </div>
               <p className="email">jj.pattarasaya@gmail.com</p>
               <div className="social-icons">
-                <span className="icon red">G</span>
-                <span className="icon black">G</span>
-                <span className="icon green">L</span>
-              </div>
+  <a href="https://github.com/PattarasayaJJ" target="_blank" rel="noopener noreferrer">
+  <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" />
+
+  </a>
+</div>
+
             </div>
             <div className="profile-bio">
-              <p className="name">ภัทรศยา ศรีสง่า (เจเจ)</p>
-              <p  className="name" >อายุ 22 ปี เกิด 3 ธันวาคม 2002</p>
-              <p className="name" >จบการศึกษาจาก วิทยาลัยการคอมพิวเตอร์</p>
-              <p className="name" >สาขาเทคโนโลยีสารสนเทศ(IT) มหาวิทยาลัยขอนแก่น 2021–2025</p>
+              <p className="name">Pattarasaya Srisanga (JJ)</p>
+              <p  className="name" >Age: 22 | Date of Birth: December 3, 2002</p>
+              <p className="name" >Graduated from  College of Computing,</p>
+              <p className="name" >Bachelor of Science (Information Technology)
+              </p>
+              <p className="name" > Khon Kaen University (2021-2025) </p>
+
             </div>
+
+
+            
           </div>
 
-          <div className="soft-skills-card">
-            <div className="section-title">Soft Skills</div>
-            <div className="skills-list">
-              {softSkills.map((skill, index) => (
-                <span className="tag pink" key={index}>
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
+
+          
+         
         </div>
 
         <div className="skills-column">
+
           <div className="skills-card">
+
             <div className="section-title">Skills</div>
+
             <div className="skills-list">
+
               {skills.map((skill, index) => {
                 let typeClass = 'pink';
                 if (skill.type === 'tool') typeClass = 'purple';
@@ -91,9 +101,39 @@ export function Aboutme() {
                 );
               })}
             </div>
+            <div className="section-title-soft">Soft Skills</div>
+            <div className="skills-list">
+              {softSkills.map((skill, index) => (
+                <span className="tag pink" key={index}>
+                  {skill}
+                </span>
+              ))}
+            </div>
+
+
+
+            
+
           </div>
+          
+          
+
+          
         </div>
+
+        
+        
       </div>
+      
+      
+
+
+      
+      
+      
     </div>
+    
+
+    
   );
 }

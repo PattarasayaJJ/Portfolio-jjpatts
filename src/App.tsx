@@ -3,9 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
-import { Works } from './components/Works'; // <- สร้างไว้ด้วยนะครับ
+import { Works } from './components/Works';
 import { Aboutme } from './components/Aboutme' ;
 import { Experience } from './components/Experience';
+import { Finalproject } from './components/Finaproject'
+import { Miniproject } from './components/Miniproject';
+import { Footer } from './components/Footer';
 
 export function App() {
   return (
@@ -15,14 +18,15 @@ export function App() {
         <main className="w-full">
           <Routes>
             <Route path="/" element={<><Hero /><Projects /></>} />
-            <Route path="/works" element={<Works />} />
-            <Route path="/aboutme" element={<Aboutme />} /> // ✅ path = "/aboutme"
+            <Route path="/works" element={<><Works /></>}/>
+            <Route path="/aboutme" element={<Aboutme />} /> 
             <Route path="/experience" element={<Experience />} />
-
-
-            {/* เพิ่ม Route สำหรับ Experiens / About me ได้ตรงนี้ */}
+            <Route path="/finalproject" element={<Finalproject />} />
+            <Route path="/miniproject" element={<Miniproject />} />
           </Routes>
         </main>
+        <Footer />
+      
       </div>
     </Router>
   );

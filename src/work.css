@@ -2,18 +2,17 @@
 .projects-section {
     width: 100%;
     background-color: #ffffff;
-    padding: 2rem 1rem; /* ค่าเริ่มต้นสำหรับมือถือ */
+    padding: 2rem 1rem; 
   }
   
   .projects-container {
-    max-width: 80rem; /* ประมาณ 1280px (7xl) */
+    max-width: 80rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
   
-  /* ---- Project Card ---- */
   .project-card {
     background: linear-gradient(to right, #FFFFFF, #E1D0F9); /* pink -> purple อ่อน */
     border-radius: 2rem;
@@ -24,64 +23,51 @@
     align-items: center;
     gap: 1.5rem;
   }
-  
-  /* Final Project (ใหญ่/สีเข้มกว่า) */
+  .final-project-card-text{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.25rem;
+    color: #4c1d95;  
+
+
+
+  }
   .project-card.final {
     background: linear-gradient(to right, #FFFFFF, #E1D0F9);
-    /* เปลี่ยนสี text ของ Final Project เป็น #DD489B */
   }
   .project-card.final .project-title {
     color: #DD489B; 
   }
   
-  /* Mini Project */
-  .project-card.mini {
-    /* ถ้าต้องการสีอ่อนกว่านี้ก็ปรับได้ */
-  }
+ 
   .project-card.mini .project-title {
-    /* เปลี่ยนสี text ของ Mini Project เป็น #9067D3 */
     color: #9067D3;
   }
   
-  /* Title ของโปรเจค */
   .project-title {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Kanit', sans-serif;
 
-    /* เดิมเป็น color: #6d28d9 แต่เราย้ายไปกำหนดใน .final / .mini แทน */
   }
   
-  /* รูปโปรเจค */
   .project-image {
     width: 100%;
     max-width: 800px;
     border-radius: 1rem;
   }
   
-  /* Hashtags */
-  .project-hashtags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
-  .project-hashtags span {
-    background-color: #fce7f3; /* pink-100 */
-    color: #9067D3;           /* ตามที่ระบุ #9067D3 */
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    font-weight: 500;
-    font-family: 'Kanit', sans-serif;
 
-  }
+ 
   
-  /* --------------- Responsive --------------- */
-  
-  /* Desktop ขึ้นไป */
+
   @media (min-width: 768px) {
     .projects-section {
-      padding: 3rem 2rem;
+      padding: 2rem;
     }
   
     .project-title {
@@ -97,7 +83,6 @@
     }
   }
   
-  /* มือถือ (จอเล็ก) */
   @media (max-width: 767px) {
     .project-title {
       font-size: 1.25rem;
