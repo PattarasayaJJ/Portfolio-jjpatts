@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../projects.css';
+import { Link } from 'react-router-dom';
+
 
 export function Projects() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,7 +17,8 @@ export function Projects() {
   return (
     <section className="projects-section">
       <div className="projects-container">
-        <a href="/works" className="project-link">
+        <Link to="/works" className="project-link">
+
           <div className="final-project-card">
           <div className="final-project-text">
                 <h2 className="final-project-title gradient-text">My Project</h2>
@@ -40,8 +43,8 @@ export function Projects() {
               </div>
             </div>
           </div>
-        </a>
-      </div>
+          </Link>
+          </div>
     </section>
   );
 }

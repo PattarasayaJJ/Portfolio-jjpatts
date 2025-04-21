@@ -1,5 +1,5 @@
 import '../work.css';
-import { ProjectCard } from './ProjectCard';
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,8 +15,7 @@ export function Works() {
         <span className="breadcrumb-current">My Projects</span>
       </nav>
               <div className="projects-container">
-        <a href="/finalproject" className="project-link">
-          <div className="final-project-card">
+              <Link to="/finalproject" className="project-link">          <div className="final-project-card">
             <div className="final-project-content">
               <div className="final-project-text">
                 <h2 className="final-project-title gradient-text">Final Project</h2>
@@ -56,9 +55,9 @@ export function Works() {
               </div>
             </div>
           </div>
-        </a>
+          </Link>
 
-        <a href="/miniproject" className="project-link">
+          <Link to="/miniproject" className="project-link">
           <div className="final-project-card">
             <div className="final-project-content">
               <div className="final-project-text">
@@ -81,7 +80,7 @@ export function Works() {
               </div>
             </div>
           </div>
-        </a>
+          </Link>
     
           </div>
         </section>
