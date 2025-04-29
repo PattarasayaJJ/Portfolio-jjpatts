@@ -4,15 +4,17 @@ import '../work.css';
 
 
 
-export function Finalproject() {
+export function Class() {
   const skills = [
-    { name: '#React-native', type: 'tech' },
-    { name: '#NodeJs', type: 'tech' },
-    { name: '#MongoDB', type: 'tech' },
-    { name: '#Manual Testing', type: 'ux' },
-
+    { name: '#User Research', type: 'ux' },
+    { name: '#Mockup', type: 'ux' },
+    { name: '#Prototyping', type: 'ux' },
+    { name: '#AdobeXD', type: 'tool' },
+    
   ];
+
   return (
+    
      <section className="projects-section">
         <nav className="breadcrumb">
         <a href="/" className="breadcrumb-link">
@@ -22,45 +24,42 @@ export function Finalproject() {
         <a href="/works" className="breadcrumb-link">
           My Projects
         </a>        <span className="breadcrumb-separator">/</span>
-        <span className="breadcrumb-current">Final Projects</span>
+        <span className="breadcrumb-current">Mini Projects</span>
       </nav>
 
 
               <div className="projects-container">
           <div className="final-project-card">
+          
             <div className="final-project-content">
-              <div className="final-project-text">
-                <h2 className="final-project-title gradient-text">Final Project-PTAH</h2>
+            <div className="final-project-text">
+                <h2 className="final-project-title gradient-text">Class Cafe</h2>
                 
               </div>
+              
               <div className="final-project-image">
                 <img
-                  src="/Ptah.png"
+                  src="/classfull.png"
                   alt="Final project screenshot"
                   className="project-screenshot"
                 />
               </div>
 
-
+              
               
             </div>
-           
             
-
-
+          
+            
             
           </div>
-         
           <div className="final-project-card-text">
             <div className="final-project-content">
              
-            This senior project is a Physical Therapy At Home Application. I gained first-hand experience as a
-             full-stack developer and collaborated with medical professionals 
-             from Srinagarind Hospital.
-           
-            </div>
-            
+            This project had a clear business objective: How can we increase this store’s sales?
+            I started by gathering customer insights and business metrics, then brainstormed revenue‑driving features before moving on to the design phase.
 
+            </div>
             
           </div>
           <div className="final-project-card-text">
@@ -80,10 +79,22 @@ export function Finalproject() {
             
           </div>
           
-    
+          
 
-       
+
+
+          
+          
+
+
+
           </div>
+
+
+          
+
+
+          
         </section>
       );
     }

@@ -20,6 +20,7 @@
   overflow: visible;
 }
 
+
 @keyframes gradientShift {
   0% {
     background: radial-gradient(
@@ -75,6 +76,11 @@
 @media (min-width: 768px) {
   .hero-left {
     width: 50%;
+  }
+  .final-project-card-ex {
+    border-radius: 2rem;
+    padding: 2.5rem;
+    /*box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); */
   }
 }
 
@@ -207,6 +213,7 @@
     font-family: 'Kanit', sans-serif;
 
   }
+ 
 }
 
 @keyframes float-rotate {

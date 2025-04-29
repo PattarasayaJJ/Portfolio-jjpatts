@@ -24,10 +24,16 @@
     transform: translateY(-0.5rem);
   }
   
-  /* ---- Final Project Card ---- */
   .final-project-card {
     /* Gradient จากชมพูอ่อนไปม่วงเข้ม */
     background: linear-gradient(to right, #FFFFFF, #E1D0F9);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  }
+  .minicard{
+    /* Gradient จากชมพูอ่อนไปม่วงเข้ม */
+    background: linear-gradient(to right, #ffffff, #ffffff);
     border-radius: 2rem;
     padding: 2.5rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);

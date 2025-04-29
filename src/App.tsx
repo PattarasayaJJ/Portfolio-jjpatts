@@ -7,9 +7,10 @@ import { Works } from './components/Works';
 import { Aboutme } from './components/Aboutme' ;
 import { Experience } from './components/Experience';
 import { Finalproject } from './components/Finalproject'
-import { Miniproject } from './components/Miniproject';
+import { Kkubus } from './components/Kkubus';
 import { Footer } from './components/Footer';
-
+import { Class } from './components/Class';
+import { Nine } from './components/Nine';
 export function App() {
   return (
     <Router>
@@ -22,7 +23,11 @@ export function App() {
             <Route path="/aboutme" element={<Aboutme />} /> 
             <Route path="/experience" element={<Experience />} />
             <Route path="/finalproject" element={<Finalproject />} />
-            <Route path="/miniproject" element={<Miniproject />} />
+            <Route path="/kkubus" element={<Kkubus />} />
+            <Route path="/class" element={<Class />} />
+            <Route path="/nine" element={<Nine />} />
+
+
           </Routes>
         </main>
         <Footer />

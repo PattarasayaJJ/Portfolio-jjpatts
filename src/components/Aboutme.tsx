@@ -20,13 +20,15 @@ export function Aboutme() {
     { name: '#Power BI', type: 'tool' },
     { name: '#Postman', type: 'tool' },
     { name: '#cypress.io', type: 'tool' },
-    { name: '#Git', type: 'tech' },
-    { name: '#HTML', type: 'tech' },
-    { name: '#CSS', type: 'tech' },
-    { name: '#Tailwind', type: 'tech' },
-    { name: '#React', type: 'tech' },
-    { name: '#React-native', type: 'tech' },
-    { name: '#MongoDB', type: 'tech' },
+    { name: '#Git', type: 'tool' },
+    { name: '#HTML', type: 'tool' },
+    { name: '#CSS', type: 'tool' },
+    { name: '#Tailwind', type: 'tool' },
+    { name: '#React', type: 'tool' },
+    { name: '#React-native', type: 'tool' },
+    { name: '#MongoDB', type: 'tool' },
+    { name: '#Node.js', type: 'tool' },
+
   ];
 
   const softSkills = ['#Team Collaboration', '#Time Management ', '#Continuous Learning'];
@@ -47,6 +49,7 @@ export function Aboutme() {
           
           <div className="profile-card">
             
+            
             <div className="profile-top">
               <div className="avatar-wrapper">
                 <img
@@ -64,12 +67,13 @@ export function Aboutme() {
 
             </div>
             <div className="profile-bio">
-              <p className="name">Pattarasaya Srisanga (JJ)</p>
-              <p  className="name" >Age: 22 | Date of Birth: December 3, 2002</p>
-              <p className="name" >Graduated from  College of Computing,</p>
-              <p className="name" >Bachelor of Science (Information Technology)
+              
+              <p className="name">Miss Pattarasaya Srisanga (JJ)</p>
+              <p  className="name" >Date of Birth: December 3, 2002</p>
+              <p className="name" >Bachelor of Science in Information Technology</p>
+              <p className="name" >
+              College of Computing, Khon Kaen University — Graduated 2025 (2021 – 2025)
               </p>
-              <p className="name" > Khon Kaen University (2021-2025) </p>
 
             </div>
 
@@ -86,7 +90,7 @@ export function Aboutme() {
 
           <div className="skills-card">
 
-            <div className="section-title">Skills</div>
+            <div className="section-title gradient-text">Skills</div>
 
             <div className="skills-list">
 
@@ -101,7 +105,7 @@ export function Aboutme() {
                 );
               })}
             </div>
-            <div className="section-title-soft">Soft Skills</div>
+            <div className="section-title-soft gradient-text">Soft Skills</div>
             <div className="skills-list">
               {softSkills.map((skill, index) => (
                 <span className="tag pink" key={index}>

@@ -36,7 +36,7 @@ export function Hero() {
        
 
 
-          <div className="final-project-card">
+          <div className="final-project-card-ex">
 
           <h2 className="final-project-title gradient-text">Experience-Teaching Assistant(TA)</h2>
 
@@ -51,7 +51,7 @@ export function Hero() {
               
               </div>
               <p className="bottom-caption">
-              “I have been a TA for two semesters in the UX/UI Design course. 
+              “I have been a TA in the UX/UI Design course. 
               The experience of being a teaching assistant has taught me many 
               things, including the importance of conducting user research with
                a user-centered design approach. It also emphasized the necessity of 

@@ -1,11 +1,11 @@
-import '../work.css';
+import { ProjectCard } from './ProjectCard';
 import { Link } from 'react-router-dom';
+import '../projects.css';
 
 
 
 export function Works() {
   return (
-    <>
      <section className="projects-section">
         <nav className="breadcrumb">
         <a href="/" className="breadcrumb-link">
@@ -15,7 +15,9 @@ export function Works() {
         <span className="breadcrumb-current">My Projects</span>
       </nav>
               <div className="projects-container">
-              <Link to="/finalproject" className="project-link">          <div className="final-project-card">
+                
+              <Link to="/finalproject" className="project-link">           
+               <div className="final-project-card">
             <div className="final-project-content">
               <div className="final-project-text">
                 <h2 className="final-project-title gradient-text">Final Project</h2>
@@ -48,43 +50,46 @@ export function Works() {
               </div>
               <div className="final-project-image">
                 <img
-                  src="/Ptah.png"
+                  src="/googleplay.png"
                   alt="Final project screenshot"
                   className="project-screenshot"
                 />
               </div>
             </div>
           </div>
-          </Link>
+        </Link>
 
-          <Link to="/miniproject" className="project-link">
-          <div className="final-project-card">
-            <div className="final-project-content">
-              <div className="final-project-text">
-                <h2 className="final-project-title gradient-text">Mini Project</h2>
-                <div className="final-project-icons">
-                  <div className="icon-wrapper">
-                    <img src="/figma.png" alt="figma" className="icon-image" />
-                  </div>
-                  <div className="icon-wrapper">
-                    <img src="/adobexd.png" alt="adobe" className="icon-image" />
-                  </div>
-                </div>
-              </div>
-              <div className="final-project-image">
-                <img
-                  src="/KKUbus.png"
-                  alt="kku bus"
-                  className="project-screenshot"
-                />
-              </div>
+        <div className="minicard">
+
+        <div className="final-project-text">
+        <h2 className="final-project-title gradient-text">Final Project</h2> </div>
+
+       
+            <div className="mini-projects-grid">
+            <Link to="/kkubus" className="project-link">
+              <ProjectCard
+                  icon="/figma.png"
+                 image="/KKUbus.png"
+                 gradient="from-purple-100 to-pink-200"            />
+              </Link>
+
+            <Link to="/class" className="project-link">
+                <ProjectCard
+                  icon="/adobexd.png"
+                  image="/classfull.png"
+                  gradient="from-purple-100 to-pink-200"            />
+              </Link>
+              <Link to="/nine" className="project-link">
+              <ProjectCard
+                  icon="/power-bi.png"
+                 image="/9Diamond.png"
+                 gradient="from-purple-100 to-pink-200"            />
+              </Link>
+             
+            </div>
             </div>
           </div>
-          </Link>
-    
-          </div>
         </section>
-        </>
       );
     }
     
