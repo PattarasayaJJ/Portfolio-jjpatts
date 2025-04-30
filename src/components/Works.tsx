@@ -62,7 +62,7 @@ export function Works() {
         <div className="minicard">
 
         <div className="final-project-text">
-        <h2 className="final-project-title gradient-text">Final Project</h2> </div>
+        <h2 className="final-project-title gradient-text">Mini Project</h2> </div>
 
        
             <div className="mini-projects-grid">
