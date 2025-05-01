@@ -20,10 +20,10 @@ export function Aboutme() {
     { name: '#Power BI', type: 'tool' },
     { name: '#Postman', type: 'tool' },
     { name: '#cypress.io', type: 'tool' },
+    { name: '#Google Sheets', type: 'tool' },
     { name: '#Git', type: 'tool' },
     { name: '#HTML', type: 'tool' },
     { name: '#CSS', type: 'tool' },
-    { name: '#Tailwind', type: 'tool' },
     { name: '#React', type: 'tool' },
     { name: '#React-native', type: 'tool' },
     { name: '#MongoDB', type: 'tool' },
@@ -48,6 +48,7 @@ export function Aboutme() {
         <div className="profile-column">
           
           <div className="profile-card">
+            
             
             
             <div className="profile-top">

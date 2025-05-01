@@ -27,12 +27,13 @@ export function Finalproject() {
 
 
               <div className="projects-container">
+              <div className="minicard">
+
+<div className="final-project-text">
+<h2 className="final-project-title gradient-text">Final Project - Physical Therapy At Home</h2> </div>
           <div className="final-project-card">
             <div className="final-project-content">
-              <div className="final-project-text">
-                <h2 className="final-project-title gradient-text">Final Project-PTAH</h2>
-                
-              </div>
+            
               <div className="final-project-image">
                 <img
                   src="/Ptah.png"
@@ -84,6 +85,8 @@ export function Finalproject() {
 
        
           </div>
+          </div>
+
         </section>
       );
     }

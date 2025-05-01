@@ -27,13 +27,14 @@ export function Nine() {
 
 
               <div className="projects-container">
+              <div className="minicard">
+
+<div className="final-project-text">
+<h2 className="final-project-title gradient-text">Mini Project - 9Diamond</h2> </div>
           <div className="final-project-card">
           
             <div className="final-project-content">
-            <div className="final-project-text">
-                <h2 className="final-project-title gradient-text">9Diamond</h2>
-                
-              </div>
+         
               
               <div className="final-project-image">
                 <img
@@ -136,7 +137,8 @@ export function Nine() {
 
 
 
-          </div>
+          </div></div>
+
 
 
           

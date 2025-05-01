@@ -1,28 +1,23 @@
-/* -------------------- Project Card Base -------------------- */
 .project-card {
-    /* Tailwind: rounded-3xl → border-radius 1.5rem (24px) */
     border-radius: 1.5rem;
-    padding: 1.5rem;         /* p-6 */
-    height: 16rem;           /* h-64 */
+    padding: 1.5rem;         
+    height: 16rem;          
     display: flex;
     flex-direction: column;
-    background: transparent; /* สีพื้นหลังจะมาจาก gradient class */
+    background: transparent;
   }
   
-  /* Gradient default: from-purple-100 to-pink-200 */
   .default-gradient {
     background: linear-gradient(to bottom, #EDE9FE, #FBCFE8);
   }
   
-  /* -------------------- Title -------------------- */
   .project-title {
-    color: #6B21A8;         /* text-purple-800 */
-    font-size: 2.25rem;      /* ประมาณ text-4xl */
+    color: #6B21A8;         
+    font-size: 2.25rem;      
     font-weight: bold;
-    margin-bottom: 1rem;     /* mb-4 */
+    margin-bottom: 1rem;   
   }
   
-  /* -------------------- Content Container -------------------- */
   .project-content {
     flex: 1;
     display: flex;
@@ -30,11 +25,10 @@
     justify-content: space-between;
   }
   
-  /* -------------------- Icon -------------------- */
   .project-icon {
-    width: 3rem;             /* w-12 */
-    height: 3rem;            /* h-12 */
-    border-radius: 0.5rem;    /* rounded-xl */
+    width: 3rem;            
+    height: 3rem;            
+    border-radius: 0.5rem;    
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -47,7 +41,6 @@
     object-fit: cover;
   }
   
-  /* -------------------- Screenshot -------------------- */
   .project-screenshot-container {
     flex: 1;
     display: flex;
@@ -55,21 +48,18 @@
   }
   
   .project-screenshot {
-    max-height: 10rem;       /* max-h-40: 40 * 0.25rem = 10rem */
-    border-radius: 0.5rem;    /* rounded-xl */
+    max-height: 10rem;      
+    border-radius: 0.5rem;  
   }
   
-  /* -------------------- Responsive Styles -------------------- */
   
-  /* Mobile: (max-width: 767px) */
   @media (max-width: 767px) {
     .project-card {
-      /* ปรับให้ height เป็น auto เพื่อยืดตามเนื้อหา */
       height: auto;
       padding: 1rem;
     }
     .project-title {
-      font-size: 1.875rem;  /* ลดขนาดฟอนต์ลง */
+      font-size: 1.875rem;  
     }
     .project-icon {
       width: 2rem;
@@ -80,7 +70,6 @@
     }
   }
   
-  /* Desktop: (min-width: 768px) */
   @media (min-width: 768px) {
     .project-card {
       height: 16rem;

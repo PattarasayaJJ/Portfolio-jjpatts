@@ -21,7 +21,7 @@ export function Projects() {
 
           <div className="final-project-card">
           <div className="final-project-text">
-                <h2 className="final-project-title gradient-text">My Project</h2>
+                <h2 className="final-project-title gradient-text">My Projects</h2>
                 
               </div>
             <div className="final-project-content">

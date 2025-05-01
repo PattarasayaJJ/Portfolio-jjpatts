@@ -6,13 +6,7 @@ import '../work.css';
 
 export function Kkubus() {
   const skills = [
-    { name: '#User Research', type: 'ux' },
-    { name: '#Usability Testing', type: 'ux' },
-    { name: '#Persona', type: 'ux' },
-    { name: '#A/B Testing', type: 'ux' },
-    { name: '#Wireframe', type: 'ux' },
-    { name: '#Mockup', type: 'ux' },
-    { name: '#Prototyping', type: 'ux' },
+
    
     { name: '#Figma', type: 'tool' },
     
@@ -34,14 +28,14 @@ export function Kkubus() {
 
 
               <div className="projects-container">
+              <div className="minicard">
+
+<div className="final-project-text">
+<h2 className="final-project-title gradient-text">Mini Project - kkubus</h2> </div>
           <div className="final-project-card">
           
             <div className="final-project-content">
-            <div className="final-project-text">
-                <h2 className="final-project-title gradient-text">KKUBUS</h2>
-                
-              </div>
-              
+           
               <div className="final-project-image">
                 <img
                   src="/KKUbus.png"
@@ -133,6 +127,7 @@ export function Kkubus() {
 
 
 
+          </div>
           </div>
 
 

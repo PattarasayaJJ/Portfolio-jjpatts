@@ -50,7 +50,7 @@ export function Works() {
               </div>
               <div className="final-project-image">
                 <img
-                  src="/googleplay.png"
+                  src="/Ptah.png"
                   alt="Final project screenshot"
                   className="project-screenshot"
                 />
@@ -62,7 +62,7 @@ export function Works() {
         <div className="minicard">
 
         <div className="final-project-text">
-        <h2 className="final-project-title gradient-text">Mini Project</h2> </div>
+        <h2 className="final-project-title gradient-text">Mini Projects</h2> </div>
 
        
             <div className="mini-projects-grid">
@@ -70,20 +70,23 @@ export function Works() {
               <ProjectCard
                   icon="/figma.png"
                  image="/KKUbus.png"
-                 gradient="from-purple-100 to-pink-200"            />
+                 gradient = 'bg-gradient-to-b from-white to-[#e6cdf5]'
+                 />
               </Link>
 
             <Link to="/class" className="project-link">
                 <ProjectCard
                   icon="/adobexd.png"
                   image="/classfull.png"
-                  gradient="from-purple-100 to-pink-200"            />
+                  gradient = 'bg-gradient-to-b from-white to-[#e6cdf5]'
+                  />
               </Link>
               <Link to="/nine" className="project-link">
               <ProjectCard
                   icon="/power-bi.png"
                  image="/9Diamond.png"
-                 gradient="from-purple-100 to-pink-200"            />
+                 gradient = 'bg-gradient-to-b from-white to-[#e6cdf5]'
+                 />
               </Link>
              
             </div>

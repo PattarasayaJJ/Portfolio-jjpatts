@@ -6,9 +6,7 @@ import '../work.css';
 
 export function Class() {
   const skills = [
-    { name: '#User Research', type: 'ux' },
-    { name: '#Mockup', type: 'ux' },
-    { name: '#Prototyping', type: 'ux' },
+  
     { name: '#AdobeXD', type: 'tool' },
     
   ];
@@ -29,13 +27,15 @@ export function Class() {
 
 
               <div className="projects-container">
+              <div className="minicard">
+
+<div className="final-project-text">
+<h2 className="final-project-title gradient-text">Mini Project - Class Cafe</h2> </div>
+                
           <div className="final-project-card">
           
             <div className="final-project-content">
-            <div className="final-project-text">
-                <h2 className="final-project-title gradient-text">Class Cafe</h2>
-                
-              </div>
+      
               
               <div className="final-project-image">
                 <img
@@ -88,6 +88,7 @@ export function Class() {
 
 
 
+          </div>
           </div>
 
 
