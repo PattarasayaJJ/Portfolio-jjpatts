@@ -6,9 +6,9 @@ import '../work.css';
 
 export function Finalproject() {
   const skills = [
-    { name: '#React-native', type: 'tech' },
-    { name: '#NodeJs', type: 'tech' },
-    { name: '#MongoDB', type: 'tech' },
+    { name: '#React-native', type: 'tool' },
+    { name: '#NodeJs', type: 'tool' },
+    { name: '#MongoDB', type: 'tool' },
     { name: '#Manual Testing', type: 'ux' },
 
   ];
@@ -30,7 +30,7 @@ export function Finalproject() {
               <div className="minicard">
 
 <div className="final-project-text">
-<h2 className="final-project-title gradient-text">Final Project - Physical Therapy At Home</h2> </div>
+ </div>
           <div className="final-project-card">
             <div className="final-project-content">
             
@@ -41,31 +41,20 @@ export function Finalproject() {
                   className="project-screenshot"
                 />
               </div>
-
-
-              
-            </div>
-           
-            
-
-
-            
+            </div>  
           </div>
          
           <div className="final-project-card-text">
+          <span className='project-name'>Physical Therapy At Home</span>
             <div className="final-project-content">
-             
+           
             This senior project is a Physical Therapy At Home Application. I gained first-hand experience as a
              full-stack developer and collaborated with medical professionals 
              from Srinagarind Hospital.
            
             </div>
-            
 
-            
-          </div>
-          <div className="final-project-card-text">
-          <div className="skills-list">
+            <div className="skills-list">
 
 {skills.map((skill, index) => {
   let typeClass = 'pink';
@@ -78,6 +67,8 @@ export function Finalproject() {
   );
 })}
 </div>
+            
+
             
           </div>
           

@@ -29,8 +29,6 @@ export function Nine() {
               <div className="projects-container">
               <div className="minicard">
 
-<div className="final-project-text">
-<h2 className="final-project-title gradient-text">Mini Project - 9Diamond</h2> </div>
           <div className="final-project-card">
           
             <div className="final-project-content">
@@ -95,24 +93,19 @@ export function Nine() {
                   alt="wireframekkubus"
                   className="project-screenshot"
                 />
-              </div>
+              </div> 
             </div> 
-
-            
           </div>
-          
-            
-            
           </div>
           <div className="final-project-card-text">
+          <span className='project-name'> 9Diamond</span>
+
             <div className="final-project-content">
+              
              
             We reached out to the store to get its sales data, which we analyzed to come up with a suitable promotion.
             </div>
-            
-          </div>
-          <div className="final-project-card-text">
-          <div className="skills-list">
+            <div className="skills-list">
 
 {skills.map((skill, index) => {
   let typeClass = 'pink';
@@ -127,6 +120,8 @@ export function Nine() {
 </div>
             
           </div>
+         
+      
           
           
 

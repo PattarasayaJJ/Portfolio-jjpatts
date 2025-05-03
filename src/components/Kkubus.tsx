@@ -29,12 +29,13 @@ export function Kkubus() {
 
               <div className="projects-container">
               <div className="minicard">
+                
 
-<div className="final-project-text">
-<h2 className="final-project-title gradient-text">Mini Project - kkubus</h2> </div>
+
           <div className="final-project-card">
           
             <div className="final-project-content">
+              
            
               <div className="final-project-image">
                 <img
@@ -90,8 +91,10 @@ export function Kkubus() {
             
           </div>
           <div className="final-project-card-text">
+          <span className='project-name'> kkubus</span>
+
             <div className="final-project-content">
-             
+
             This was my first mini project, starting with user research and 
             continuing through to design, following various principles and 
             guidelines. The main focus was to ensure that users could use the 
@@ -99,10 +102,7 @@ export function Kkubus() {
             A/B testing, usability testing, and applied other UX/UI principles as well.
 
             </div>
-            
-          </div>
-          <div className="final-project-card-text">
-          <div className="skills-list">
+            <div className="skills-list">
 
 {skills.map((skill, index) => {
   let typeClass = 'pink';
@@ -117,6 +117,7 @@ export function Kkubus() {
 </div>
             
           </div>
+          
           
           
 

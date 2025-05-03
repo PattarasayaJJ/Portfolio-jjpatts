@@ -18,7 +18,7 @@ export function App() {
         <Header />
         <main className="w-full">
           <Routes>
-            <Route path="/" element={<><Hero /><Projects /></>} />
+            <Route path="/" element={<><Hero /> <Projects /></>} />
             <Route path="/works" element={<><Works /></>}/>
             <Route path="/aboutme" element={<Aboutme />} /> 
             <Route path="/experience" element={<Experience />} />

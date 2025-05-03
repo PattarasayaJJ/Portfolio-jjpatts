@@ -5,13 +5,14 @@ export function Hero() {
     <>
       <section className="hero-section">
         <div className="hero-container">
-        <div className="hero-right">
+        <div className="hero-left">
+
             <div className="hero-text-box">
+            <span className="hero-name typing">Hello, I'm JJ</span>
+
               <p className="hero-quote">
-               <span className='hero-name'>Hello, I'm JJ </span>  
-               and I recently graduated from Khon Kaen University, 
-               seeking opportunities to gain real-world experience. 
-               I have a strong interest in UX/UI design and Software Testing.
+
+               I recently graduated from Khon Kaen University,College of Computing.
               
               </p>
              
@@ -51,7 +52,7 @@ export function Hero() {
               
               </div>
               <p className="bottom-caption">
-              “I have been a TA in the UX/UI Design course. 
+              “I have been a TA in the<span className='uxui'> UX/UI Design course.</span>
               The experience of being a teaching assistant has taught me many 
               things, including the importance of conducting user research with
                a user-centered design approach. It also emphasized the necessity of 
@@ -59,7 +60,10 @@ export function Hero() {
             </p>
            
             </div>
+
+            
           </div>
+          
 
 
           

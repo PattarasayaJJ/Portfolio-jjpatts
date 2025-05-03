@@ -30,7 +30,7 @@ export function Class() {
               <div className="minicard">
 
 <div className="final-project-text">
-<h2 className="final-project-title gradient-text">Mini Project - Class Cafe</h2> </div>
+ </div>
                 
           <div className="final-project-card">
           
@@ -54,16 +54,15 @@ export function Class() {
             
           </div>
           <div className="final-project-card-text">
+          <span className='project-name'>Class Cafe</span>
+
             <div className="final-project-content">
              
-            This project had a clear business objective: How can we increase this store’s sales?
+          This project had a clear business objective: How can we increase this store’s sales? <br></br>
             I started by gathering customer insights and business metrics, then brainstormed revenue‑driving features before moving on to the design phase.
 
             </div>
-            
-          </div>
-          <div className="final-project-card-text">
-          <div className="skills-list">
+            <div className="skills-list">
 
 {skills.map((skill, index) => {
   let typeClass = 'pink';
@@ -78,7 +77,7 @@ export function Class() {
 </div>
             
           </div>
-          
+         
           
 
 

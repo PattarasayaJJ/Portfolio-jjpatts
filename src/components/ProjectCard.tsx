@@ -19,6 +19,7 @@ export function ProjectCard({
               alt="Project icon"
               className="w-full h-full object-cover"
             />
+            
           </div>
         )}
         {image && (

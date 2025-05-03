@@ -7,18 +7,27 @@
   .about-columns {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
   
  .soft-skills-card, .skills-card {
-    border: 1px solid #f9a8d4;
-    border-radius: 1.5rem;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); 
+  border-width:2px;
+  border-style:dashed;
+  border-color: #4c1d95;
+
+ 
     padding: 1.5rem;
   }
 
   .profile-card {
-    border: 1px solid #f9a8d4;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); 
+    border-width:2px;
+    border-style:dashed;
+    border-color: #4c1d95;
 
     padding-top: 0; /* ลบ padding ด้านบน */
   }
@@ -51,7 +60,6 @@
     margin-top: 0.5rem;
     display: flex;
     justify-content: center;
-    gap: 1rem;
   }
   
 
@@ -59,7 +67,6 @@
   .profile-bio {
     margin-top: 1.5rem;
     padding: 1rem;
-    color: white;
    
 
   }
@@ -190,7 +197,7 @@
 .breadcrumb {
   margin-bottom: 1rem;
   font-size: 1rem;
-  color: #4B5563; /* text-gray-600 */
+  color: #4B5563; 
   display: flex;
   align-items: center;
 }
@@ -198,6 +205,8 @@
 .breadcrumb-link {
   color: #4B5563;
   text-decoration: none;
+  font-family: 'Kanit', sans-serif;
+
 }
 
 .breadcrumb-link:hover {
@@ -210,5 +219,7 @@
 
 .breadcrumb-current {
   font-weight: bold;
-  color: #312e81; /* Indigo */
+  color: #312e81; 
+  font-family: 'Kanit', sans-serif;
+
 }

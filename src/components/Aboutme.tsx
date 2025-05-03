@@ -70,7 +70,6 @@ export function Aboutme() {
             <div className="profile-bio">
               
               <p className="name">Miss Pattarasaya Srisanga (JJ)</p>
-              <p  className="name" >Date of Birth: December 3, 2002</p>
               <p className="name" >Bachelor of Science in Information Technology</p>
               <p className="name" >
               College of Computing, Khon Kaen University — Graduated 2025 (2021 – 2025)
