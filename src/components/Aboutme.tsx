@@ -71,19 +71,37 @@ export function Aboutme() {
             
             
             
-            <div className="profile-top">
             
-            </div>
             <div className="profile-bio">
-            <div className="section-title gradient-text">Profile</div>
+            <div className="section-title gradient-text">
+             <li>Profile</li> </div>
 
               
               <p className="name">Miss Pattarasaya Srisanga (JJ)</p>
-              <p className="name" >Bachelor of Science in Information Technology</p>
+              <p className="name" >Bachelor of Science (Information Technology)</p>
               <p className="name" >
               College of Computing, Khon Kaen University — Graduated 2025 (2021 – 2025)
               </p>
 
+              
+
+            </div>
+          </div>
+          <div className="profile-card">
+            
+            
+            
+            
+            <div className="profile-bio">
+            <div className="section-title gradient-text">
+             <li>Certificate</li> </div>
+             <img
+                  src="/certificate.png"
+                  alt="certificate"
+                  className='certificate'
+                />
+
+             
               
 
             </div>
@@ -101,6 +119,7 @@ export function Aboutme() {
           </div>
 
 
+
           
          
         </div>
@@ -108,7 +127,8 @@ export function Aboutme() {
 
         <div className="skills-column">
           <div className="skills-card">
-            <div className="section-title gradient-text">Skills</div>
+            <div className="section-title gradient-text">
+             <li>Skills</li> </div>
             <div className="skills-list">
               {skills.map((skill, index) => {
                 let typeClass = 'pink';
@@ -122,7 +142,8 @@ export function Aboutme() {
               })}
             </div>
 
-            <div className="section-title-soft gradient-text">Soft Skills</div>
+            <div className="section-title-soft gradient-text">
+             <li>Soft Skills</li> </div>
             <div className="skills-list">
               {softSkills.map((skill, index) => (
                 <span className="tag pink" key={index}>

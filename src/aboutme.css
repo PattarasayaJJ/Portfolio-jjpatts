@@ -28,7 +28,7 @@
     border-width:2px;
     border-style:dashed;
     border-color: #4c1d95;
-
+margin-bottom: 1rem;
   }
   
   
@@ -36,7 +36,8 @@
     width: 15rem;
     height: 15rem;
     overflow: hidden;
-    margin: 0 auto 0 auto; /* ลบระยะด้านบน */
+    margin: 0 auto 0 auto; 
+    
   }
 
   .avatar{
@@ -60,7 +61,7 @@ margin-bottom: 15px;
     text-align: center;
     font-family: 'Kanit', sans-serif;
     color: #4c1d95;
-    font-size:0.8rem;
+    font-size:1rem;
 
   }
   
@@ -93,30 +94,24 @@ margin-bottom: 15px;
 
   }
   
-  .section-title {
-    font-size: 1.25rem;
-    border-radius: 9999px;
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-family: 'Kanit', sans-serif;
 
-  }
-  
 
   .section-title-soft {
     font-size: 1.25rem;
-    border-radius: 9999px;
     display: inline-block;
     margin-bottom: 1rem;
     font-family: 'Kanit', sans-serif;
     margin-top: 1rem;
 
   }
-  .section-title- {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+  .section-title {
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-family: 'Kanit', sans-serif;
+
   }
+  
   .gradient-text {
     background: linear-gradient(to right, #DD489B, #9067D3);
     -webkit-background-clip: text;
@@ -131,31 +126,33 @@ margin-bottom: 15px;
   .tag {
     padding: 0.5rem 1rem;
     border-radius: 9999px;
-    font-size: 0.875rem;
-    font-weight: 500;
+    font-size: 1rem;
     font-family: 'Kanit', sans-serif;
 
   }
   
   .tag.pink {
     background-color: #fbcfe8;
-    color: #831843;
+    color: #4c1d95;;
 
   }
   
   .tag.purple {
     background-color: #e9d5ff;
-    color: #6b21a8;
+    color: #4c1d95;;
 
   }
-  
-  .tag.indigo {
-    background-color: #c7d2fe;
-    color: #312e81;
+
+  .certificate{
+    width: 80%;
+    margin: 0 auto; /* จัดให้อยู่กึ่งกลางแนวนอน */
 
   }
+
   
-  /* Responsive */
+  
+
+  
   @media (min-width: 768px) {
     .about-columns {
       flex-direction: row;
@@ -177,6 +174,14 @@ margin-bottom: 15px;
       font-size: 0.75rem;
       color: #4c1d95;
       font-family: 'Kanit', sans-serif;
+  
+    }
+    .email {
+      margin-top: 0rem;
+      text-align: center;
+      font-family: 'Kanit', sans-serif;
+      color: #4c1d95;
+      font-size:0.75rem;
   
     }
     
@@ -211,8 +216,8 @@ margin-bottom: 15px;
     
     
   }
-  /* Breadcrumb */
-.breadcrumb {
+
+  .breadcrumb {
   margin-bottom: 1rem;
   font-size: 1rem;
   color: #4B5563; 
@@ -237,7 +242,7 @@ margin-bottom: 15px;
 
 .breadcrumb-current {
   font-weight: bold;
-  color: #312e81; 
+  color: #4c1d95; 
   font-family: 'Kanit', sans-serif;
 
 }

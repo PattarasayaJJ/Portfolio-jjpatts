@@ -8,7 +8,7 @@ export function Hero() {
         <div className="hero-left">
 
             <div className="hero-text-box">
-            <span className="hero-name typing">Hello, I'm JJ</span>
+            <span className="hero-name typing">Hello, I'm JJ.</span>
 
               <p className="hero-quote">
 
@@ -16,8 +16,8 @@ export function Hero() {
               
               </p>
               <li className='interest'>My Interest:</li>
-             <li>UX/UI Designer</li>
-             <li>Software Tester</li>
+             <li >UX/UI Designer</li>
+             <li >Software Tester</li>
 
              
             </div>
