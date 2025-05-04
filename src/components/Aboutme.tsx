@@ -27,6 +27,8 @@ export function Aboutme() {
     { name: '#React', type: 'tool' },
     { name: '#React-native', type: 'tool' },
     { name: '#MongoDB', type: 'tool' },
+    { name: '#SQL', type: 'tool' },
+
     { name: '#Node.js', type: 'tool' },
 
   ];
@@ -46,13 +48,10 @@ export function Aboutme() {
       
       <div className="about-columns">
         <div className="profile-column">
-          
-          <div className="profile-card">
-            
-            
-            
-            <div className="profile-top">
-              <div className="avatar-wrapper">
+
+          <div className='avatar'>
+
+        <div className="avatar-wrapper">
                 <img
                   src="/jejey.png"
                   alt="Profile"
@@ -65,9 +64,19 @@ export function Aboutme() {
 
   </a>
 </div>
+</div>
 
+          
+          <div className="profile-card">
+            
+            
+            
+            <div className="profile-top">
+            
             </div>
             <div className="profile-bio">
+            <div className="section-title gradient-text">Profile</div>
+
               
               <p className="name">Miss Pattarasaya Srisanga (JJ)</p>
               <p className="name" >Bachelor of Science in Information Technology</p>
@@ -75,7 +84,17 @@ export function Aboutme() {
               College of Computing, Khon Kaen University — Graduated 2025 (2021 – 2025)
               </p>
 
+              
+
             </div>
+
+           
+
+            
+
+            
+
+         
 
 
             
@@ -85,15 +104,12 @@ export function Aboutme() {
           
          
         </div>
+        
 
         <div className="skills-column">
-
           <div className="skills-card">
-
             <div className="section-title gradient-text">Skills</div>
-
             <div className="skills-list">
-
               {skills.map((skill, index) => {
                 let typeClass = 'pink';
                 if (skill.type === 'tool') typeClass = 'purple';
@@ -105,6 +121,7 @@ export function Aboutme() {
                 );
               })}
             </div>
+
             <div className="section-title-soft gradient-text">Soft Skills</div>
             <div className="skills-list">
               {softSkills.map((skill, index) => (
@@ -113,17 +130,23 @@ export function Aboutme() {
                 </span>
               ))}
             </div>
-
-
-
-            
-
           </div>
+
+       
+
+              
+             
+
+              
+
+          
+       
           
           
 
           
         </div>
+        
 
         
         

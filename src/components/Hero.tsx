@@ -15,7 +15,10 @@ export function Hero() {
                I recently graduated from Khon Kaen University,College of Computing.
               
               </p>
-             
+              <li className='interest'>My Interest:</li>
+             <li>UX/UI Designer</li>
+             <li>Software Tester</li>
+
              
             </div>
           </div>
@@ -43,7 +46,7 @@ export function Hero() {
 
             <div className="final-project-content">
               
-              <div className="final-project-image">
+              <div className="final">
               <img
               src="/ta.png"  
               alt="TA Presentation"
@@ -52,12 +55,12 @@ export function Hero() {
               
               </div>
               <p className="bottom-caption">
-              “I have been a TA in the<span className='uxui'> UX/UI Design course.</span>
-              The experience of being a teaching assistant has taught me many 
-              things, including the importance of conducting user research with
-               a user-centered design approach. It also emphasized the necessity of 
-               testing prior to actual implementation. A good design should be both useful and usable.”
+              Nov. 2023 - Mar. 2025 at College of Computing, Khon Kaen University.
+              Assisted in teaching and guiding students on topics related to <span className='uxui'> UX/UI design.</span>
+         
             </p>
+           
+            
            
             </div>
 

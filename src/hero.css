@@ -47,6 +47,18 @@
     );
   }
 }
+.interest{
+  list-style: none;
+  font-family: 'Kanit', sans-serif;
+  color: #4c1d95;
+
+}
+li{
+  font-family: 'Kanit', sans-serif;
+  color: #4d1d95a2;
+  line-height: 1.8rem;
+
+}
 
 .hero-image-wrapper::before {
   content: "";
@@ -177,18 +189,13 @@
 }
 
 .hero-name {
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 1rem;
   font-family: 'Kanit', sans-serif;
 
 }
 
-.hero-nickname {
-  font-size: 1.125rem;
-  font-family: 'Kanit', sans-serif;
 
-}
 
 @media (max-width: 767px) {
   .hero-image-wrapper::before {
@@ -229,6 +236,14 @@
     font-family: 'Kanit', sans-serif;
 
   }
+  .final-project-card-ex {
+    border-radius: 2rem;
+    padding: 2.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); 
+    border-width:2px;
+    border-style:dashed;
+    border-color: #4c1d95;
+  }
  
 }
 
@@ -252,19 +267,7 @@
     }
   }
   
-  .experience-title {
-    background: linear-gradient(to right, #ec4899, #d8b4fe);
-    color: white;
-    font-weight: 600;
-    font-size: 1.25rem;
-    padding: 0.5rem 1.5rem;
-    border-radius: 9999px;
-    display: inline-block;
-    margin-bottom: 1rem;
-    align-self: flex-start;  
-    font-family: 'Kanit', sans-serif;
 
-  }
   
   @media (min-width: 768px) {
     .experience-title {
@@ -287,7 +290,7 @@
     }
   }
     .bottom-image {
-    width: 100%;
+    width:100%;
     max-width: 500px; 
     border-radius: 1rem; 
   }
@@ -321,14 +324,14 @@
     .bottom-caption {
       font-size: 1.125rem; 
       align-self: center;
-      text-align: left;
+      text-align: center;
       font-family: 'Kanit', sans-serif;
 
     }
   }
 
   .hero-name{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
  

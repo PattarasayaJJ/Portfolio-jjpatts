@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { MenuIcon, XIcon } from 'lucide-react';
+import '../header.css';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,24 +12,31 @@ export function Header() {
   return (
 <header className="w-full bg-black py-4 px-8 relative">
 <div className="max-w-7xl mx-auto flex justify-between items-center">
+  <Link
+            to="/">
         <div className="flex items-center">
           <img src="/JP.png" alt="logo" className="w-20" />
         </div>
+        </Link>
 
         <nav className="hidden md:flex space-x-8">
           <Link
             to="/"
             className={`font-medium px-8 py-2 rounded-full ${
-              isActive('/') ? 'bg-white text-purple-600' : 'text-white'
+              isActive('/') ? 'bg-white text-purple-600' : 'gradient-text'
             }`}
+            style={isActive('/') ? { color: '#4c1d95' } : {}}
+
           >
             Home
           </Link>
           <Link
             to="/works"
             className={`font-medium px-8 py-2 rounded-full ${
-              isActive('/works') ? 'bg-white text-purple-600' : 'text-white'
+              isActive('/works') ? 'bg-white text-purple-600' : 'gradient-text'
             }`}
+            style={isActive('/works') ? { color: '#4c1d95' } : {}}
+
           >
             My Projects
           </Link>
@@ -38,8 +46,10 @@ export function Header() {
           <Link
             to="/aboutme"
             className={`font-medium px-8 py-2 rounded-full ${
-              isActive('/aboutme') ? 'bg-white text-purple-600' : 'text-white'
+              isActive('/aboutme') ? 'bg-white text-purple-600' : 'gradient-text'
             }`}
+            style={isActive('/aboutme') ? { color: '#4c1d95' } : {}}
+
           >
             About me
           </Link>
@@ -65,8 +75,10 @@ export function Header() {
             <Link
               to="/"
               className={`font-medium px-6 py-2 rounded-full block text-center ${
-                isActive('/') ? 'bg-white text-purple-600' : 'text-white'
+                isActive('/') ? 'bg-white text-purple-600' : 'gradient-text'
               }`}
+              style={isActive('/') ? { color: '#4c1d95' } : {}}
+
               onClick={() => setIsMenuOpen(false)}
             >
               Home
@@ -74,8 +86,10 @@ export function Header() {
             <Link
               to="/works"
               className={`font-medium px-6 py-2 rounded-full block text-center ${
-                isActive('/works') ? 'bg-white text-purple-600' : 'text-white'
+                isActive('/works') ? 'bg-white text-purple-600' : 'gradient-text'
               }`}
+              style={isActive('/works') ? { color: '#4c1d95' } : {}}
+
               onClick={() => setIsMenuOpen(false)}
             >
               My Projects
@@ -85,8 +99,10 @@ export function Header() {
             <Link
               to="/aboutme"
               className={`font-medium px-6 py-2 rounded-full block text-center ${
-                isActive('/aboutme') ? 'bg-white text-purple-600' : 'text-white'
+                isActive('/aboutme') ? 'bg-white text-purple-600' : 'gradient-text'
               }`}
+              style={isActive('/aboutme') ? { color: '#4c1d95' } : {}}
+
               onClick={() => setIsMenuOpen(false)}
             >
               About me

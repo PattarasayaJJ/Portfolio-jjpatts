@@ -1,0 +1,15 @@
+.underline-gradient {
+    position: relative;
+  }
+  
+  .underline-gradient::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* ปรับระยะห่างใต้ตัวหนังสือ */
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #DD489B, #9067D3);
+    border-radius: 2px;
+  }
+  

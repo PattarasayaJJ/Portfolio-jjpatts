@@ -56,7 +56,7 @@
   }
   
   .final-project-title {
-    font-size: 2.125rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     font-family: 'Kanit', sans-serif;
 
@@ -65,7 +65,9 @@
     background: linear-gradient(to right, #DD489B, #9067D3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
   }
+  
   
   .final-project-icons {
     display: flex;

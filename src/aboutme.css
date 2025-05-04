@@ -29,7 +29,6 @@
     border-style:dashed;
     border-color: #4c1d95;
 
-    padding-top: 0; /* ลบ padding ด้านบน */
   }
   
   
@@ -38,6 +37,15 @@
     height: 15rem;
     overflow: hidden;
     margin: 0 auto 0 auto; /* ลบระยะด้านบน */
+  }
+
+  .avatar{
+    border-radius: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); 
+margin-bottom: 15px;    
+    padding-top: 0; /* ลบ padding ด้านบน */
+    padding-bottom: 10px;
+
   }
   
   
@@ -61,11 +69,18 @@
     display: flex;
     justify-content: center;
   }
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  .social-icons img:hover {
+    filter: grayscale(100%) brightness(150%);
+  }
+  
   
 
   
   .profile-bio {
-    margin-top: 1.5rem;
     padding: 1rem;
    
 
@@ -79,7 +94,6 @@
   }
   
   .section-title {
-    color: linear-gradient(to right, #ec4899, #d8b4fe);
     font-size: 1.25rem;
     border-radius: 9999px;
     display: inline-block;
@@ -90,7 +104,6 @@
   
 
   .section-title-soft {
-    color: linear-gradient(to right, #ec4899, #d8b4fe);
     font-size: 1.25rem;
     border-radius: 9999px;
     display: inline-block;
@@ -191,6 +204,11 @@
       justify-content: center;
       gap: 1rem;
     }
+    .social-icons img {
+      width: 16px;
+      height: 16px;
+    }
+    
     
   }
   /* Breadcrumb */
