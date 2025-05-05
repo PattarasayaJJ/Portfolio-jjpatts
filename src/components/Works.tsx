@@ -49,7 +49,7 @@ export function Works() {
               </div>
               <div className="final-project-content">
 
-              <p> <span className='appname'>Physical Therapy At Home Aplication. </span>
+              <p> <span className='appname'>Physical Therapy At Home Application. </span>
            I gained first-hand experience as a
              full-stack developer and collaborated with medical professionals 
              from Srinagarind Hospital.</p>
