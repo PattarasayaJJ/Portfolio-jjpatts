@@ -35,6 +35,7 @@
     border-radius: 2rem;
     padding: 2.5rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    
   }
   
   .final-project-content {
@@ -42,23 +43,35 @@
     flex-direction: row; 
     align-items: center;
     justify-content: space-between;
-    gap: 1em;
+    gap: 2em;
   }
   
   .final-project-text {
-    width: 80%;
+    width: 100%;
+
   }
  
 
   .final-project-image {
-    width: 100%;
-    height: auto;
+    flex-shrink: 0;       
+    width:500px;           
+    height: auto;          
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .final-project-title {
-    font-size: 2rem;
+  .final-project-title  {
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     font-family: 'Kanit', sans-serif;
+
+  }
+  
+  .project-title li{
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    padding: 2rem;
 
   }
   .gradient-text {
@@ -87,16 +100,49 @@
   
   .project-screenshot {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover;      /* หรือ object-fit: contain; ตามความเหมาะสม */
     border-radius: 10px;
-    transition: opacity 0.3s ease-in-out;
   }
   
   .mini-projects-grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  @keyframes pulseMove {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .moreproject {
+    width: 100%;
+    height: 3rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    margin: 2rem auto 0; /* จัดตรงกลาง */
+    font-family: 'Kanit', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    animation: pulseMove 2s ease-in-out infinite;
+
+
+  }
+  
+  .moreproject:hover {
+    background-color: #f2f2f2;
+  transform: scale(1.08);
+  }
+  .arrow-icon{
+    padding: 0.5rem;
+    font-weight: bold;
   }
   
   @media (max-width: 767px) {

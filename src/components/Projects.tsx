@@ -8,49 +8,73 @@ export function Projects() {
   return (
     <section className="projects-section">
       <div className="projects-container">
-        <Link to="/works" className="project-link">
 
           <div className="minicard">
-          <div className="final-project-text">
-                <h2 className="final-project-title gradient-text">My Projects</h2>
-                
-              </div>
-
-              
-
-              
+          
             <div className="final-project-content">
 
+            <div className="projects-container">
+            <div className="final-project-card">
+            <div className="final-project-content">
+              <div className="final-project-text">
+                <div className="final-project-icons">
+                  <div className="icon-wrapper">
+                    <img src="/figma.png" alt="figma" className="icon-image" />
+                  </div>
+                  <div className="icon-wrapper">
+                    <img
+                      src="https://www.mongodb.com/assets/images/global/favicon.ico"
+                      alt="MongoDB"
+                      className="icon-image"
+                    />
+                  </div>
+                  <div className="icon-wrapper">
+                    <img
+                      src="https://reactjs.org/favicon.ico"
+                      alt="React"
+                      className="icon-image"
+                    />
+                  </div>
+                  <div className="icon-wrapper">
+                    <img
+                      src="https://nodejs.org/static/images/favicons/favicon.png"
+                      alt="Node.js"
+                      className="icon-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="final-project-image">
+                <img
+                  src="/googleplay.png"
+                  alt="Final project screenshot"
+                  className="project-screenshot"
+                />
+              </div>
+            </div>
+            
+          </div>
 
-            <Link to="/finalproject" className="project-link">           
-            <ProjectCard
-                                icon="/favicon.ico"
-                               image="/Ptah.png"
-                               gradient = 'bg-gradient-to-b from-white to-[#e6cdf5]'
-                               />
-                            </Link>
-                            <Link to="/kkubus" className="project-link">
-                            <ProjectCard
-                                icon="/figma.png"
-                               image="/KKUbus.png"
-                               gradient = 'bg-gradient-to-b from-white to-[#e6cdf5]'
-                               />
-                            </Link>
-                            <Link to="/class" className="project-link">
-                <ProjectCard
-                  icon="/adobexd.png"
-                  image="/classfull.png"
-                  gradient = 'bg-gradient-to-b from-white to-[#e6cdf5]'
-                  />
-              </Link>
-              <Link to="/nine" className="project-link">
-              <ProjectCard
-                  icon="/power-bi.png"
-                 image="/9Diamond.png"
-                 gradient = 'bg-gradient-to-b from-white to-[#e6cdf5]'
-                 />
-              </Link>
+       
+       
+       
+     
+
+        
+      </div>
+      <Link
+  to="/works"
+  className="moreproject"
+  onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
+>
+  <span className="gradient-text">View All My Projects</span>
+  <span className="arrow-icon gradient-text">›</span>
+</Link>
+
+          
               
+             
+             
               
             </div>
 
@@ -58,7 +82,6 @@ export function Projects() {
           </div>
 
           
-          </Link>
           </div>
     </section>
   );

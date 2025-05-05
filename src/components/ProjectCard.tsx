@@ -13,7 +13,7 @@ export function ProjectCard({
     <div className={`bg-gradient-to-b ${gradient} rounded-3xl p-6 h-64 flex flex-col`}>
 <div className="flex-1 flex items-center justify-between gap-4">
 {icon && (
-          <div className="w-10 h-10 rounded-xl overflow-hidden">
+          <div className="w-8 h-8 rounded-xl overflow-hidden">
             <img
               src={icon}
               alt="Project icon"

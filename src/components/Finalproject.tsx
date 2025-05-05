@@ -10,6 +10,8 @@ export function Finalproject() {
     { name: '#NodeJs', type: 'tool' },
     { name: '#MongoDB', type: 'tool' },
     { name: '#Manual Testing', type: 'ux' },
+    { name: '#Automated Testing(Postman) ', type: 'ux' },
+
 
   ];
   return (
@@ -29,24 +31,19 @@ export function Finalproject() {
               <div className="projects-container">
               <div className="minicard">
 
-<div className="final-project-text">
- </div>
-          <div className="final-project-card">
-            <div className="final-project-content">
+       
+          <div className="final-project-card-text">
             
-              <div className="final-project-image">
+          <span className='project-name'>Physical Therapy At Home</span>
+          
+            <div className="final-project-content">
+            <div className="final-project-image">
                 <img
                   src="/Ptah.png"
                   alt="Final project screenshot"
                   className="project-screenshot"
                 />
               </div>
-            </div>  
-          </div>
-         
-          <div className="final-project-card-text">
-          <span className='project-name'>Physical Therapy At Home</span>
-            <div className="final-project-content">
            
             This senior project is a Physical Therapy At Home Application. I gained first-hand experience as a
              full-stack developer and collaborated with medical professionals 
