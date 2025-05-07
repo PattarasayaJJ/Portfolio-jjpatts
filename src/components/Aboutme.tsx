@@ -31,7 +31,7 @@ export function Aboutme() {
 
   const tools = [
     { name: '#Figma', type: 'tool' },
-    { name: '#Adobe XD', type: 'tool' },
+    { name: '#AdobeXD', type: 'tool' },
     { name: '#Git', type: 'tool' },
     { name: '#Power BI', type: 'tool' },
     { name: '#Postman', type: 'tool' },
