@@ -8,22 +8,28 @@ export function Hero() {
         <div className="hero-left">
 
             <div className="hero-text-box">
-            <span className="hero-name typing">Hello, I'm JJ.</span>
+              
+            <span className="hero-name typing">Hello, I'm JJ. </span>
 
               <p className="hero-quote">
 
                I recently graduated from Khon Kaen University,College of Computing.
               
               </p>
-              <li className='interest'>My Interest:</li>
+              
+              <li className='interest'>My Interest: </li>
              <li >UX/UI Designer</li>
              <li >Software Tester</li>
              <li >Frontend developer</li>
+             
+
+       
 
 
              
             </div>
           </div>
+          
           <div className="hero-left">
             <div className="hero-image-wrapper">
               <img
@@ -32,6 +38,8 @@ export function Hero() {
                 className="hero-main-image"
               />
             </div>
+            
+            
            
           </div>
          

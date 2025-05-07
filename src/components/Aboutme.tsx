@@ -3,6 +3,43 @@ import '../aboutme.css';
 
 export function Aboutme() {
   const skills = [
+    { name: '#HTML', type: 'tool' },
+    { name: '#CSS', type: 'tool' },
+    { name: '#Javascript', type: 'tool' },
+    { name: '#TypeScript', type: 'tool' },
+
+
+  ];
+
+  const frame = [
+    { name: '#Node.js', type: 'tool' },
+    { name: '#Express.js', type: 'tool' },
+    { name: '#React', type: 'tool' },
+    { name: '#React-native', type: 'tool' },
+    { name: '#Bootstrap', type: 'tool' },
+    { name: '#Tailwind', type: 'tool' },
+
+
+   
+  ];
+
+  const database = [
+    { name: '#MongoDB', type: 'tool' },
+    { name: '#MySQL', type: 'tool' },
+   
+  ];
+
+  const tools = [
+    { name: '#Figma', type: 'tool' },
+    { name: '#Adobe XD', type: 'tool' },
+    { name: '#Git', type: 'tool' },
+    { name: '#Power BI', type: 'tool' },
+    { name: '#Postman', type: 'tool' },
+    { name: '#cypress.io', type: 'tool' },
+    { name: '#Google Sheets', type: 'tool' },
+  ];
+
+  const uxui = [
     { name: '#User Research', type: 'ux' },
     { name: '#Usability Testing', type: 'ux' },
     { name: '#Persona', type: 'ux' },
@@ -13,24 +50,13 @@ export function Aboutme() {
     { name: '#Visual Design', type: 'ux' },
     { name: '#Interaction Design', type: 'ux' },
     { name: '#Design System', type: 'ux' },
+   
+  ];
+
+  const tester = [
     { name: '#Manual Testing', type: 'ux' },
     { name: '#Automated Testing ', type: 'ux' },
-    { name: '#Figma', type: 'tool' },
-    { name: '#Adobe XD', type: 'tool' },
-    { name: '#Power BI', type: 'tool' },
-    { name: '#Postman', type: 'tool' },
-    { name: '#cypress.io', type: 'tool' },
-    { name: '#Google Sheets', type: 'tool' },
-    { name: '#Git', type: 'tool' },
-    { name: '#HTML', type: 'tool' },
-    { name: '#CSS', type: 'tool' },
-    { name: '#React', type: 'tool' },
-    { name: '#React-native', type: 'tool' },
-    { name: '#MongoDB', type: 'tool' },
-    { name: '#SQL', type: 'tool' },
-
-    { name: '#Node.js', type: 'tool' },
-
+   
   ];
 
   const softSkills = ['#Team Collaboration', '#Time Management ', '#Continuous Learning'];
@@ -128,7 +154,7 @@ export function Aboutme() {
         <div className="skills-column">
           <div className="skills-card">
             <div className="section-title gradient-text">
-             <li>Skills</li> </div>
+             <li>Programming Languages </li> </div>
             <div className="skills-list">
               {skills.map((skill, index) => {
                 let typeClass = 'pink';
@@ -142,11 +168,92 @@ export function Aboutme() {
               })}
             </div>
 
+
+            <div className="section-title-soft gradient-text">
+             <li>Frameworks & Libraries  </li> </div>
+            <div className="skills-list">
+              {frame.map((skill, index) => {
+                let typeClass = 'pink';
+                if (skill.type === 'tool') typeClass = 'purple';
+                else if (skill.type === 'tech') typeClass = 'indigo';
+                return (
+                  <span className={`tag ${typeClass}`} key={index}>
+                    {skill.name}
+                  </span>
+                );
+              })}
+            </div>
+
+
+            <div className="section-title-soft gradient-text">
+             <li>Tools </li> </div>
+            <div className="skills-list">
+              {tools.map((skill, index) => {
+                let typeClass = 'pink';
+                if (skill.type === 'tool') typeClass = 'purple';
+                else if (skill.type === 'tech') typeClass = 'indigo';
+                return (
+                  <span className={`tag ${typeClass}`} key={index}>
+                    {skill.name}
+                  </span>
+                );
+              })}
+            </div>
+
+
+            <div className="section-title-soft gradient-text">
+             <li>Databases  </li> </div>
+            <div className="skills-list">
+              {database.map((skill, index) => {
+                let typeClass = 'pink';
+                if (skill.type === 'tool') typeClass = 'purple';
+                else if (skill.type === 'tech') typeClass = 'indigo';
+                return (
+                  <span className={`tag ${typeClass}`} key={index}>
+                    {skill.name}
+                  </span>
+                );
+              })}
+            </div>
+
+            <div className="section-title-soft gradient-text">
+             <li>Software testing  </li> </div>
+            <div className="skills-list">
+              {tester.map((skill, index) => {
+                let typeClass = 'pink';
+                if (skill.type === 'tool') typeClass = 'purple';
+                else if (skill.type === 'tech') typeClass = 'indigo';
+                return (
+                  <span className={`tag ${typeClass}`} key={index}>
+                    {skill.name}
+                  </span>
+                );
+              })}
+            </div>
+
+            <div className="section-title-soft gradient-text">
+             <li>UX/UI Design  </li> </div>
+            <div className="skills-list">
+              {uxui.map((skill, index) => {
+                let typeClass = 'pink';
+                if (skill.type === 'tool') typeClass = 'purple';
+                else if (skill.type === 'tech') typeClass = 'indigo';
+                return (
+                  <span className={`tag ${typeClass}`} key={index}>
+                    {skill.name}
+                  </span>
+                );
+              })}
+            </div>
+
+
+            
+
             <div className="section-title-soft gradient-text">
              <li>Soft Skills</li> </div>
             <div className="skills-list">
               {softSkills.map((skill, index) => (
-                <span className="tag pink" key={index}>
+                <span className="tag soft" key={index}>
                   {skill}
                 </span>
               ))}

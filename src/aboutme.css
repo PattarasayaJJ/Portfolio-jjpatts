@@ -105,7 +105,7 @@
   .tag {
     padding: 0.4rem 1rem;
     border-radius: 9999px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: 'Kanit', sans-serif;
   }
   
@@ -117,6 +117,11 @@
   
   .tag.purple {
     background-color: #e9d5ff;
+    color: #4c1d95;;
+
+  }
+  .tag.soft {
+    background-color: #e5dfee;
     color: #4c1d95;;
 
   }

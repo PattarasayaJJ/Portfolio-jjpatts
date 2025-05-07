@@ -1,6 +1,5 @@
 import '../projects.css';
 import { Link } from 'react-router-dom';
-import { ProjectCard } from './ProjectCard';
 
 
 export function Projects() {

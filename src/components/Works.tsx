@@ -5,10 +5,17 @@ import '../projects.css';
 export function Works() {
   const Ptahskills = [
     { name: '#React-native', type: 'tool' },
-    { name: '#NodeJs', type: 'tool' },
+    { name: '#Node.js', type: 'tool' },
     { name: '#MongoDB', type: 'tool' },
     { name: '#Manual Testing', type: 'ux' },
     { name: '#Automated Testing (Postman) ', type: 'ux' },
+  ];
+  const stv = [
+    { name: '#HTML', type: 'tool' },
+    { name: '#Javascript', type: 'tool' },
+    { name: '#Bootstrap', type: 'tool' },
+
+
   ];
 
   const kkuBusSkills = [
@@ -67,16 +74,51 @@ export function Works() {
   );
 })}
 </div>
+
           </div>
           </div>
 
           <div className="final-project-text">
           <h2 className="project-title gradient-text"> <li>Mini Projects</li> </h2> </div>
 
+          <div className="minicard">
+          <div className="final-project-card-text">
+
+            <div className="final-project-content">
+              
+            <div className="final-project-image">
+                <img
+                  src="/360.png"
+                  alt="Final project screenshot"
+                  className="project-screenshot"
+                />
+                
+              </div>
+              
+              <div className="final-project-content">
+
+<p> <span className='appname'>360streetview. </span>
+A website featuring 360-degree virtual tours of various locations at Khon Kaen University.</p>
+</div>
+
+            </div>
+            <div className="skills-list">
+{stv.map((skill, index) => {
+  let typeClass = 'pink';
+  if (skill.type === 'tool') typeClass = 'purple';
+  else if (skill.type === 'tech') typeClass = 'indigo';
+  return (
+    <span className={`tag ${typeClass}`} key={index}>
+      {skill.name}
+    </span>
+  );
+})}
+</div>
+          </div>
+          </div>
+
 
           <div className="minicard">
-            
-            
           <div className="final-project-card-text">
 
             <div className="final-project-content">
