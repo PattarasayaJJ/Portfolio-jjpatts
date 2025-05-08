@@ -79,7 +79,7 @@ export function Aboutme() {
 
         <div className="avatar-wrapper">
                 <img
-                  src="/jejey.png"
+                  src="/nongjj.png"
                   alt="Profile"
                 />
               </div>

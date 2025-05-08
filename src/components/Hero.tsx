@@ -20,7 +20,7 @@ export function Hero() {
               <li className='interest'>My Interest: </li>
              <li >UX/UI Designer</li>
              <li >Software Tester</li>
-             <li >Frontend developer</li>
+             <li >Programmer</li>
              
 
        

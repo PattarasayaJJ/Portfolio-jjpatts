@@ -107,11 +107,17 @@
   }
 }
 
+
+
+
+
 .hero-text-box {
   color: #4c1d95;
   max-width: 36rem;
   margin-left: auto;
 }
+
+
 
 .hero-quote {
   font-size: 1.125rem;
@@ -127,6 +133,8 @@
 
 
 }
+
+
 
 
 @keyframes swingImage {
