@@ -7,7 +7,8 @@ export function Works() {
     { name: '#React-native', type: 'tool' },
     { name: '#Node.js', type: 'tool' },
     { name: '#MongoDB', type: 'tool' },
-    
+    { name: '#Manual Testing', type: 'ux' },
+    { name: '#Automated Testing (Postman) ', type: 'ux' },
   ];
   const stv = [
     { name: '#HTML', type: 'tool' },

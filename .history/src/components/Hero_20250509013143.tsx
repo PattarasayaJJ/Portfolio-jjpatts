@@ -33,7 +33,7 @@ export function Hero() {
           <div className="hero-left">
             <div className="hero-image-wrapper">
               <img
-                src="/card1.png"
+                src="/me.png"
                 alt="Portfolio character illustration"
                 className="hero-main-image"
               />

@@ -14,8 +14,6 @@ export function Aboutme() {
   const frame = [
     { name: '#Node.js', type: 'tool' },
     { name: '#Express.js', type: 'tool' },
-        { name: '#Vue.js', type: 'tool' },
-
     { name: '#React', type: 'tool' },
     { name: '#React-native', type: 'tool' },
     { name: '#Bootstrap', type: 'tool' },
