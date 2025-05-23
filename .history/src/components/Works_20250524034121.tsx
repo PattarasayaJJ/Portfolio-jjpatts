@@ -195,38 +195,6 @@ I started by gathering customer insights and business metrics, then brainstormed
           </div>
 
 
-            <div className="minicard">
-          <div className="final-project-card-text">
-            <div className="final-project-content">
-            <div className="final-project-image">
-                <img
-                  src="/bakery.png"
-                  alt="Final project screenshot"
-                  className="project-screenshot"
-                />
-              </div>
-              <div className="final-project-content">
-
-<p> <span className='appname'>Bakery Shop. </span>
-The Bakey Shop application was created as a teaching tool for first-year students, with the purpose of introducing and providing practice in using Figma .</p>
-</div>
-            </div>
-            <div className="skills-list">
-{ClassSkills.map((skill, index) => {
-  let typeClass = 'pink';
-  if (skill.type === 'tool') typeClass = 'purple';
-  else if (skill.type === 'tech') typeClass = 'indigo';
-  return (
-    <span className={`tag ${typeClass}`} key={index}>
-      {skill.name}
-    </span>
-  );
-})}
-</div>
-          </div>
-          </div>
-
-
           <div className="minicard">
           <div className="final-project-card-text">
             <div className="final-project-content">

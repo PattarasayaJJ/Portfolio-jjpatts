@@ -207,8 +207,8 @@ I started by gathering customer insights and business metrics, then brainstormed
               </div>
               <div className="final-project-content">
 
-<p> <span className='appname'>Bakery Shop. </span>
-The Bakey Shop application was created as a teaching tool for first-year students, with the purpose of introducing and providing practice in using Figma .</p>
+<p> <span className='appname'>Bakey Shop. </span>
+Bakery Shop Application.</p>
 </div>
             </div>
             <div className="skills-list">
