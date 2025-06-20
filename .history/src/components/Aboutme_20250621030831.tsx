@@ -83,7 +83,6 @@ export function Aboutme() {
                 <img
                   src="/nongjj.png"
                   alt="Profile"
-                  className="avata-img"
                 />
               </div>
               <p className="email">jj.pattarasaya@gmail.com</p>
@@ -101,7 +100,6 @@ export function Aboutme() {
             
             
             
-            <div className="profile-bio">
             <div className="section-title gradient-text">
              <li>Profile</li> </div>
 
@@ -114,11 +112,18 @@ export function Aboutme() {
 
               
 
-            </div>
           </div>
 
 
-         
+           <div className="section-title-soft gradient-text">
+             <li>Soft Skills</li> </div>
+            <div className="skills-list">
+              {softSkills.map((skill, index) => (
+                <span className="tag soft" key={index}>
+                  {skill}
+                </span>
+              ))}
+            </div>
          
 
 

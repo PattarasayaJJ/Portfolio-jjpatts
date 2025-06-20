@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
 import { Works } from './components/Works';
 import { Aboutme } from './components/Aboutme' ;
+import { Experience } from './components/Experience';
 import { Finalproject } from './components/Finalproject'
 import { Kkubus } from './components/Kkubus';
 import { Footer } from './components/Footer';

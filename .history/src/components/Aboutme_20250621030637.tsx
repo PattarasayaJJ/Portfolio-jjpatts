@@ -115,37 +115,7 @@ export function Aboutme() {
 
             </div>
           </div>
-          <div className="profile-card">
-            
-            
-            
-            
-            <div className="profile-bio">
-            <div className="section-title gradient-text">
-             <li>Certificate</li> </div>
-             <img
-                  src="/certificate.png"
-                  alt="certificate"
-                  className='certificate'
-                />
-
-             
-              
-
-            </div>
-
-           
-
-            
-
-            
-
          
-
-
-            
-          </div>
-
 
 
           
@@ -262,19 +232,6 @@ export function Aboutme() {
             </div>
           </div>
 
-       
-
-              
-             
-
-              
-
-          
-       
-          
-          
-
-          
         </div>
         
 

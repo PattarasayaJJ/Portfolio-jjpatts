@@ -46,7 +46,7 @@ export function Projects() {
               <div className="final-project-image">
                 <img
                   src="/googleplay.png"
-                  alt="Final project"
+                  alt="Final project screenshot"
                   className="project-screenshot"
                 />
               </div>

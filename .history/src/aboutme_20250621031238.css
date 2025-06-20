@@ -16,7 +16,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); 
   border-width:2px;
   border-style:dashed;
-  border-color:#DD489B;
+  border-color: #4c1d95;
   padding: 1.5rem;
   }
 
@@ -29,15 +29,16 @@
     margin-bottom: 1rem;
   }
   .avatar-wrapper {
-    width: 15rem;
+    width: 40rem;
     height: 15rem;
     overflow: hidden;
     margin: 0 auto 0 auto;  
   }
   .avatar{
     border-radius: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); 
     margin-bottom: 15px;    
-    padding-top: 0; 
+    padding-top: 0; /* ลบ padding ด้านบน */
     padding-bottom: 10px;
 
   }
@@ -46,11 +47,6 @@
     height: 100%;
     object-fit: contain;
   }
-
-
-
-
-  
   .email {
     margin-top: 0rem;
     text-align: center;
@@ -142,9 +138,10 @@
   
   @media (min-width: 768px) {
     .about-columns {
+      flex-direction: row;
     }
     .profile-column, .skills-column {
-      width: 100%;
+      width: 50%;
     }
   
     

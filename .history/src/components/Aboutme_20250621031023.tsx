@@ -83,7 +83,6 @@ export function Aboutme() {
                 <img
                   src="/nongjj.png"
                   alt="Profile"
-                  className="avata-img"
                 />
               </div>
               <p className="email">jj.pattarasaya@gmail.com</p>
@@ -128,7 +127,7 @@ export function Aboutme() {
         
 
         <div className="skills-column">
-          <div className="skills-card">
+          <div className="skills-card--">
             <div className="section-title gradient-text">
              <li>Programming Languages </li> </div>
             <div className="skills-list">

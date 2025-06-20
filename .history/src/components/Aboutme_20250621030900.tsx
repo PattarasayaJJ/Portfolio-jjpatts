@@ -83,7 +83,6 @@ export function Aboutme() {
                 <img
                   src="/nongjj.png"
                   alt="Profile"
-                  className="avata-img"
                 />
               </div>
               <p className="email">jj.pattarasaya@gmail.com</p>

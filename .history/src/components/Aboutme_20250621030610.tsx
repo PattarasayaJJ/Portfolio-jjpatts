@@ -14,6 +14,8 @@ export function Aboutme() {
   const frame = [
     { name: '#Node.js', type: 'tool' },
     { name: '#Express.js', type: 'tool' },
+        { name: '#Vue.js', type: 'tool' },
+
     { name: '#React', type: 'tool' },
     { name: '#React-native', type: 'tool' },
     { name: '#Bootstrap', type: 'tool' },
@@ -113,37 +115,7 @@ export function Aboutme() {
 
             </div>
           </div>
-          <div className="profile-card">
-            
-            
-            
-            
-            <div className="profile-bio">
-            <div className="section-title gradient-text">
-             <li>Certificate</li> </div>
-             <img
-                  src="/certificate.png"
-                  alt="certificate"
-                  className='certificate'
-                />
-
-             
-              
-
-            </div>
-
-           
-
-            
-
-            
-
          
-
-
-            
-          </div>
-
 
 
           
@@ -260,19 +232,6 @@ export function Aboutme() {
             </div>
           </div>
 
-       
-
-              
-             
-
-              
-
-          
-       
-          
-          
-
-          
         </div>
         
 

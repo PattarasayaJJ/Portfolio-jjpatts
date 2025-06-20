@@ -26,7 +26,7 @@ export function ProjectCard({
           <div className="flex-1 flex justify-end">
             <img
               src={image}
-              alt="Project"
+              alt="Project screenshot"
               className="max-h-40 rounded-xl" 
             />
           </div>

@@ -14,9 +14,8 @@
   border-radius: 2rem;
   padding: 2.5rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); 
-  border-width:2px;
   border-style:dashed;
-  border-color:#DD489B;
+  border-color: #4c1d95;
   padding: 1.5rem;
   }
 
@@ -36,6 +35,7 @@
   }
   .avatar{
     border-radius: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); 
     margin-bottom: 15px;    
     padding-top: 0; 
     padding-bottom: 10px;
@@ -46,11 +46,6 @@
     height: 100%;
     object-fit: contain;
   }
-
-
-
-
-  
   .email {
     margin-top: 0rem;
     text-align: center;
