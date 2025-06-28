@@ -47,7 +47,9 @@ export function Aboutme() {
     { name: '#Wireframe', type: 'ux' },
     { name: '#Mockup', type: 'ux' },
     { name: '#Prototyping', type: 'ux' },
+    { name: '#Visual Design', type: 'ux' },
     { name: '#Interaction Design', type: 'ux' },
+    { name: '#Design System', type: 'ux' },
    
   ];
 

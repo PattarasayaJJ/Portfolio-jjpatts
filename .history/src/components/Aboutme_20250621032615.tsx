@@ -6,12 +6,14 @@ export function Aboutme() {
     { name: '#HTML', type: 'tool' },
     { name: '#CSS', type: 'tool' },
     { name: '#Javascript', type: 'tool' },
+    { name: '#TypeScript', type: 'tool' },
 
 
   ];
 
   const frame = [
     { name: '#Node.js', type: 'tool' },
+    { name: '#Express.js', type: 'tool' },
         { name: '#Vue.js', type: 'tool' },
 
     { name: '#React', type: 'tool' },
@@ -47,7 +49,9 @@ export function Aboutme() {
     { name: '#Wireframe', type: 'ux' },
     { name: '#Mockup', type: 'ux' },
     { name: '#Prototyping', type: 'ux' },
+    { name: '#Visual Design', type: 'ux' },
     { name: '#Interaction Design', type: 'ux' },
+    { name: '#Design System', type: 'ux' },
    
   ];
 
