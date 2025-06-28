@@ -160,8 +160,7 @@ A website featuring 360-degree virtual tours of various locations at Khon Kaen U
 
                  <div className="final-project-image">
                 <img
-                  src="/storykkubus.jpeg"
-                  alt="Final project screenshot"
+storykkubus.jpeg                  alt="Final project screenshot"
                   className="project-screenshot"
                 />
               </div>
@@ -176,16 +175,14 @@ A website featuring 360-degree virtual tours of various locations at Khon Kaen U
 
                 
 
-              <p> <span className='appname'>KKU Shuttle Bus.  </span>
-          This was my first mini project, starting with user research and 
-            continuing through to design, following various principles and 
-            guidelines. The main focus was to ensure that users could use the 
-            product without a steep learning curve. In this project, I conducted 
-            A/B testing, usability testing, and applied other UX/UI principles as well.</p>
+              <p> <span className='appname'>Physical Therapy At Home Application. </span>
+           I gained first-hand experience as a
+             full-stack developer and collaborated with medical professionals 
+             from Srinagarind Hospital.</p>
              </div>
             
-             <div className="skills-list">
-{kkuBusSkills.map((skill, index) => {
+            <div className="skills-list">
+{Ptahskills.map((skill, index) => {
   let typeClass = 'pink';
   if (skill.type === 'tool') typeClass = 'purple';
   else if (skill.type === 'tech') typeClass = 'indigo';
@@ -201,6 +198,51 @@ A website featuring 360-degree virtual tours of various locations at Khon Kaen U
           </div>
           
 
+
+          <div className="minicard">
+          <div className="final-project-card-text">
+
+            <div className="final-project-content">
+              
+            <div className="final-project-image">
+                <img
+                  src="/KKUbus.png"
+                  alt="Final project screenshot"
+                  className="project-screenshot"
+                />
+
+                
+                
+              </div>
+
+              
+
+              
+              
+              <div className="final-project-content">
+
+<p> <span className='appname'>KKU Shuttle Bus. </span>
+This was my first mini project, starting with user research and 
+            continuing through to design, following various principles and 
+            guidelines. The main focus was to ensure that users could use the 
+            product without a steep learning curve. In this project, I conducted 
+            A/B testing, usability testing, and applied other UX/UI principles as well.</p>
+</div>
+            </div>
+            <div className="skills-list">
+{kkuBusSkills.map((skill, index) => {
+  let typeClass = 'pink';
+  if (skill.type === 'tool') typeClass = 'purple';
+  else if (skill.type === 'tech') typeClass = 'indigo';
+  return (
+    <span className={`tag ${typeClass}`} key={index}>
+      {skill.name}
+    </span>
+  );
+})}
+</div>
+          </div>
+          </div>
 
         
 
