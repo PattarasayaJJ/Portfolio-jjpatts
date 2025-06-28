@@ -5,6 +5,8 @@ import '../projects.css';
 export function Works() {
   const Ptahskills = [
     { name: '#React-native', type: 'tool' },
+        { name: '#React', type: 'tool' },
+
     { name: '#Node.js', type: 'tool' },
     { name: '#MongoDB', type: 'tool' },
     
@@ -24,8 +26,8 @@ export function Works() {
     { name: '#AdobeXD', type: 'tool' },
   ];
 
-    const ClassSkills = [
-    { name: '#AdobeXD', type: 'tool' },
+    const BakeySkills = [
+    { name: '#Figma', type: 'tool' },
   ];
 
   const NineSkills = [
@@ -55,16 +57,35 @@ export function Works() {
                   alt="Final project screenshot"
                   className="project-screenshot"
                 />
+
+                
                 
               </div>
-              <div className="final-project-content">
+
+                 <div className="final-project-image">
+                <img
+                  src="/ptahdoctor.png"
+                  alt="Final project screenshot"
+                  className="project-screenshot"
+                />
+              </div>
+
+            
+              
+              
+             
+            </div>
+
+   <div className="final-project-content">
+
+                
 
               <p> <span className='appname'>Physical Therapy At Home Application. </span>
            I gained first-hand experience as a
              full-stack developer and collaborated with medical professionals 
              from Srinagarind Hospital.</p>
              </div>
-            </div>
+            
             <div className="skills-list">
 {Ptahskills.map((skill, index) => {
   let typeClass = 'pink';
@@ -177,6 +198,38 @@ This was my first mini project, starting with user research and
 <p> <span className='appname'>Class Cafe. </span>
 This project had a clear business objective: How can we increase this store’s sales? <br></br>
 I started by gathering customer insights and business metrics, then brainstormed revenue‑driving features before moving on to the design phase.</p>
+</div>
+            </div>
+            <div className="skills-list">
+{ClassSkills.map((skill, index) => {
+  let typeClass = 'pink';
+  if (skill.type === 'tool') typeClass = 'purple';
+  else if (skill.type === 'tech') typeClass = 'indigo';
+  return (
+    <span className={`tag ${typeClass}`} key={index}>
+      {skill.name}
+    </span>
+  );
+})}
+</div>
+          </div>
+          </div>
+
+
+            <div className="minicard">
+          <div className="final-project-card-text">
+            <div className="final-project-content">
+            <div className="final-project-image">
+                <img
+                  src="/bakery.png"
+                  alt="Final project screenshot"
+                  className="project-screenshot"
+                />
+              </div>
+              <div className="final-project-content">
+
+<p> <span className='appname'>Bakery Shop. </span>
+The Bakey Shop application was created as a teaching tool for first-year students, with the purpose of introducing and providing practice in using Figma .</p>
 </div>
             </div>
             <div className="skills-list">

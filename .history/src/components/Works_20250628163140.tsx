@@ -57,7 +57,10 @@ export function Works() {
                 />
                 
               </div>
+              
               <div className="final-project-content">
+
+                
 
               <p> <span className='appname'>Physical Therapy At Home Application. </span>
            I gained first-hand experience as a
@@ -65,6 +68,15 @@ export function Works() {
              from Srinagarind Hospital.</p>
              </div>
             </div>
+
+            <div className="final-project-image">
+                <img
+                  src="/Ptah.png"
+                  alt="Final project screenshot"
+                  className="project-screenshot"
+                />
+                
+              </div>
             <div className="skills-list">
 {Ptahskills.map((skill, index) => {
   let typeClass = 'pink';
@@ -207,9 +219,8 @@ I started by gathering customer insights and business metrics, then brainstormed
               </div>
               <div className="final-project-content">
 
-<p> <span className='appname'>Class Cafe. </span>
-This project had a clear business objective: How can we increase this store’s sales? <br></br>
-I started by gathering customer insights and business metrics, then brainstormed revenue‑driving features before moving on to the design phase.</p>
+<p> <span className='appname'>Bakery Shop. </span>
+The Bakey Shop application was created as a teaching tool for first-year students, with the purpose of introducing and providing practice in using Figma .</p>
 </div>
             </div>
             <div className="skills-list">

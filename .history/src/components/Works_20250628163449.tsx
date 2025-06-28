@@ -55,16 +55,35 @@ export function Works() {
                   alt="Final project screenshot"
                   className="project-screenshot"
                 />
+
+                
                 
               </div>
-              <div className="final-project-content">
+
+                 <div className="final-project-image">
+                <img
+                  src="/ptahdoctor.png"
+                  alt="Final project screenshot"
+                  className="project-screenshot"
+                />
+              </div>
+
+            
+              
+              
+             
+            </div>
+
+   <div className="final-project-content">
+
+                
 
               <p> <span className='appname'>Physical Therapy At Home Application. </span>
            I gained first-hand experience as a
              full-stack developer and collaborated with medical professionals 
              from Srinagarind Hospital.</p>
              </div>
-            </div>
+            
             <div className="skills-list">
 {Ptahskills.map((skill, index) => {
   let typeClass = 'pink';
