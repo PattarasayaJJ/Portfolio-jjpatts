@@ -1,0 +1,39 @@
+.final-project-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.final {
+  flex-shrink: 0;
+}
+
+.bottom-image {
+  width: 400px;
+  max-width: 700px;
+  border-radius: 1rem;
+}
+
+.bottom-caption {
+  font-size: 1.125rem;
+  color: #4c1d95;
+  text-align: left;
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .final-project-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .bottom-caption {
+    text-align: center;
+  }
+  
+  .bottom-image {
+    width: 100%;
+    max-width: 400px;
+  }
+}

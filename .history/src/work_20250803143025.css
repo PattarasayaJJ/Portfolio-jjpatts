@@ -1,0 +1,209 @@
+.projects-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.projects-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  background: linear-gradient(to right, #FFFFFF, #E1D0F9);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.final-project-card-text {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.125rem;
+  color: #4c1d95;
+}
+
+.minicard {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eee7f9;
+}
+
+/* แก้ไขส่วนนี้ - กำหนดขนาดรูปคงที่ */
+.final-project-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* เปลี่ยนจาก center เป็น flex-start */
+  gap: 2rem;
+  font-size: 1.125rem;
+  color: #4c1d95;
+}
+
+/* กำหนดขนาดรูปคงที่ */
+.final-project-image {
+  flex-shrink: 0; /* ป้องกันไม่ให้รูปหดตัว */
+  width: 250px; /* กำหนดความกว้างคงที่ */
+  height: 180px; /* กำหนดความสูงคงที่ */
+}
+
+.project-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ทำให้รูปไม่บิดเบี้ยว */
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ส่วนข้อความ */
+.final-project-text-content {
+  flex: 1; /* ให้ข้อความขยายตัวเต็มพื้นที่ที่เหลือ */
+  min-width: 0; /* ป้องกัน overflow */
+}
+
+/* สำหรับโปรเจคที่มีหลายรูป */
+.multiple-images {
+  flex-direction: column !important;
+}
+
+.multiple-images .images-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.multiple-images .final-project-image {
+  width: 200px;
+  height: 150px;
+}
+
+.final-project-text {
+  width: 100%;
+}
+
+.project-title, .final-project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem 0;
+  color: #DD489B;
+}
+
+.project-card.mini .project-title {
+  color: #9067D3;
+}
+
+.appname {
+  font-weight: 700;
+  color: #4c1d95;
+}
+
+/* Skills tags */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.tag.purple {
+  background-color: #e5d4ff;
+  color: #6b46c1;
+}
+
+.tag.pink {
+  background-color: #fce7f3;
+  color: #be185d;
+}
+
+.tag.indigo {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .projects-section {
+    padding: 2rem 1rem;
+  }
+
+  .final-project-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .final-project-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .multiple-images .images-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .multiple-images .final-project-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .final-project-content {
+    font-size: 1rem;
+  }
+
+  .appname {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-section {
+    padding: 2rem;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .final-project-content {
+    font-size: 1.125rem;
+  }
+
+  .appname {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .final-project-content {
+    flex-direction: column;
+  }
+  
+  .final-project-image {
+    width: 100%;
+    height: 250px;
+  }
+}

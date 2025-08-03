@@ -1,0 +1,133 @@
+.projects-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2rem 1rem; 
+  }
+  
+  .projects-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  
+  .project-card {
+    background: linear-gradient(to right, #FFFFFF, #E1D0F9); /* pink -> purple อ่อน */
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+ 
+  .final-project-card-text{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.125rem;
+    color: #4c1d95;  
+
+
+
+  }
+  
+  .project-card.final {
+    background: linear-gradient(to right, #FFFFFF, #E1D0F9);
+  }
+  .mini-project-card {
+    background: linear-gradient(to right, #FFFFFF, #E1D0F9);
+  }
+  .project-card.final .project-title {
+    color: #DD489B; 
+  }
+  
+ 
+  .project-card.mini .project-title {
+    color: #9067D3;
+  }
+  
+  
+  
+  .project-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 1rem;
+  }
+  
+  .project-name{
+    font-size: 1.5rem;
+  }
+
+ 
+  
+
+  @media (min-width: 768px) {
+    .projects-section {
+      padding: 2rem;
+    }
+  
+    .project-title {
+      font-size: 2rem;
+    }
+  
+    .project-image {
+      max-width: 1000px;
+    }
+    .text-final{
+      font-family: 'Kanit', sans-serif;
+
+    }
+    .final-project-content{
+      font-size: 1.125rem;
+      color: #4c1d95;
+      font-family: 'Kanit', sans-serif;
+
+    }
+    .appname{
+      font-size: 1.125rem;
+      color: #4c1d95;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 700;
+
+    
+
+  }
+  }
+  
+  @media (max-width: 767px) {
+    .project-title {
+      font-size: 1.25rem;
+    }
+  
+    .project-image {
+      max-width: 100%;
+    }
+    .text-final{
+      font-family: 'Kanit', sans-serif;
+      text-align: center;
+     
+
+    }
+    .final-project-content{
+      font-size: 1rem;
+      color: #4c1d95;
+      font-family: 'Kanit', sans-serif;
+
+    }
+    .appname{
+      font-size: 1rem;
+      color: #4c1d95;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 700;
+
+    
+
+  }
+  }
+  
