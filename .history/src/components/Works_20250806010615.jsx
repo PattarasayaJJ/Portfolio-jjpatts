@@ -175,7 +175,7 @@ export function Works() {
           <div className="project-content">
             <p className="project-name">
               <span className="highlight">ChillCast. </span> 
-  is a weather forecast web app built with Vue.js as a personal project to practice frontend development and real-time data integration.
+              is an interactive tarot reading website that uses the full 78-card tarot.
             </p>
             
             <div className="skills-list">

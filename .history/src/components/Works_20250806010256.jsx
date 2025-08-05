@@ -166,7 +166,7 @@ export function Works() {
               className="project-image"
             />
              <img
-              src="/chillcast2.png"
+              src="/tarot2.png"
               alt="Tarot Reading"
               className="project-image"
             />
@@ -174,12 +174,12 @@ export function Works() {
           
           <div className="project-content">
             <p className="project-name">
-              <span className="highlight">ChillCast. </span> 
-  is a weather forecast web app built with Vue.js as a personal project to practice frontend development and real-time data integration.
+              <span className="highlight">Doo Duang with Nong JJ. </span> 
+              is an interactive tarot reading website that uses the full 78-card tarot.
             </p>
             
             <div className="skills-list">
-              {Chillcast.map((skill, index) => (
+              {tarot.map((skill, index) => (
                 <span className="skill-tag" key={index}>
                   {skill.name}
                 </span>

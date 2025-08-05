@@ -36,7 +36,8 @@ export function Works() {
   ];
 
     const Chillcast = [
-    { name: '#Vue.js', type: 'tool' },
+          { name: '#V', type: 'tool' },
+
     { name: '#Tailwind', type: 'tool' },
   ];
 
@@ -148,38 +149,6 @@ export function Works() {
             
             <div className="skills-list">
               {tarot.map((skill, index) => (
-                <span className="skill-tag" key={index}>
-                  {skill.name}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-
-
-        {/* Chillcast Project */}
-        <div className="project-card">
-          <div className="project-images single">
-            <img
-              src="/chillcast.png"
-              alt="Tarot Reading"
-              className="project-image"
-            />
-             <img
-              src="/chillcast2.png"
-              alt="Tarot Reading"
-              className="project-image"
-            />
-          </div>
-          
-          <div className="project-content">
-            <p className="project-name">
-              <span className="highlight">ChillCast. </span> 
-  is a weather forecast web app built with Vue.js as a personal project to practice frontend development and real-time data integration.
-            </p>
-            
-            <div className="skills-list">
-              {Chillcast.map((skill, index) => (
                 <span className="skill-tag" key={index}>
                   {skill.name}
                 </span>
