@@ -1,0 +1,303 @@
+/* --- Global guard กันล้นแนวนอน --- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { 
+  overflow-x: hidden; 
+}
+
+img { 
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+/* --- Layout --- */
+.hero-section {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left {
+  position: relative;
+  width: 100%;
+  /* สำคัญมาก: อนุญาตให้ flex item หด */
+  min-width: 0;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  z-index: 10;
+  /* มือถือเคยล้นจากเบลอ ให้ซ่อนไว้ */
+  overflow: hidden;
+  /* ช่วย isolate เอฟเฟกต์เบลอไม่ให้กินพื้นที่ layout */
+  contain: paint;
+}
+
+/* --- Glow BG --- */
+@keyframes gradientShift {
+  0% {
+    background: radial-gradient(
+      circle at center,
+      rgba(244, 114, 182, 0.5),
+      rgba(216, 180, 255, 0.3),
+      transparent 70%
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle at center,
+      rgba(129, 140, 248, 0.5),
+      rgba(216, 180, 255, 0.4),
+      transparent 70%
+    );
+  }
+  100% {
+    background: radial-gradient(
+      circle at center,
+      rgba(244, 114, 182, 0.5),
+      rgba(216, 180, 255, 0.3),
+      transparent 70%
+    );
+  }
+}
+
+.hero-image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  transform: translate(-50%, -50%);
+  filter: blur(80px);
+  z-index: 5;
+  pointer-events: none;
+  animation: gradientShift 5s ease-in-out infinite;
+
+  border-radius: 50%;          /* ทำให้กรอบกลม */
+  clip-path: circle(50% at 50% 50%); /* บังคับตัดเป็นวงกลม */
+}
+
+
+
+/* --- Text --- */
+.hero-text-box {
+  color: #4c1d95;
+  /* กันข้อความยาว ๆ ดันล้น */
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hero-quote {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-name {
+  font-weight: 700;
+  margin-top: 1rem;
+  /* ปรับ scale ตามจอ ป้องกันล้น */
+  font-size: clamp(1.6rem, 8vw, 3rem);
+  display: block;
+  max-width: 100%;
+}
+
+/* --- Typing effect: ปรับเป็นตัวแปรคุมจำนวนตัวอักษร --- */
+.typing {
+  --chars: 16; /* ปรับให้ตรงกับข้อความจริง "Hello, I'm JeJey." ~ 16 ตัว */
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0; /* เริ่มที่ 0 ให้ค่อย ๆ วิ่ง */
+  animation: typing 2s steps(var(--chars)) forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to   { width: calc(var(--chars) * 1ch) }
+}
+
+/* --- Image swing --- */
+@keyframes swingImage {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.hero-main-image {
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+  animation: swingImage 5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* --- Button --- */
+.moreproject {
+  width: fit-content;
+  height: 3.5rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: 4rem auto 0;
+  box-shadow: 0 8px 25px rgba(76, 29, 149, 0.3);
+  padding: 0 2rem;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  animation: pulseMove 2s ease-in-out infinite;
+}
+
+@keyframes pulseMove {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.moreproject:hover {
+  background-color: black;
+  transform: scale(1.08);
+}
+
+.arrow-icon {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+/* --- Experience Card --- */
+.final-project-card-ex {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.final-project-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.final {
+  /* เดิม flex-shrink:0 ทำให้ล้นได้ */
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.bottom-caption {
+  flex: 1;
+  text-align: left;
+}
+
+/* --- Title gradient --- */
+.ex-title-text {
+  background: linear-gradient(135deg, #DD489B, #9067D3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* --- Responsive --- */
+@media (min-width: 768px) {
+  .hero-container { flex-direction: row; }
+  .hero-left { width: 50%; }
+  .hero-right { width: 50%; text-align: right; }
+
+  .bottom-image {
+    width: 400px;
+    max-width: 700px;
+    border-radius: 1rem;
+  }
+
+  .bottom-caption {
+    font-size: 1rem;
+    color: #4c1d95;
+    align-self: center;
+    text-align: center;
+  }
+
+  .uxui {
+    font-size: 1rem;
+    color: #4c1d95;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-image-wrapper::before {
+    width: 120%;
+    height: 120%;
+    filter: blur(40px);
+  }
+
+  .hero-main-image {
+    width: 90%;
+    max-width: 20rem;
+  }
+
+  .hero-text-box {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+
+  .hero-quote { font-size: 1rem; }
+
+  .final-project-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .bottom-caption {
+    font-size: 1rem;
+    color: #4c1d95;
+    align-self: center;
+    text-align: center;
+  }
+
+  .uxui {
+    font-size: 1rem;
+    color: #4c1d95;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+
+  .interest { list-style: none; color: #4c1d95; }
+
+  li {
+    font-size: 1rem;
+    color: #4d1d95a2;
+    line-height: 1.8rem;
+  }
+}

@@ -31,7 +31,45 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-image-wrapper {
   position: relative;
   z-index: 10;
-  overflow: visible;
+  overflow: visible;   /* ให้แสงล้นได้ ไม่ไปติดกรอบ */
+  contain: paint;      /* isolate layer */
+}
+
+/* ลบของเก่าทิ้ง: ถ้ามี ::before เดิม ให้ลบทิ้งทั้งหมด */
+
+/* วงกลม glow แท้ ๆ */
+.hero-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(70vmin, 900px);  /* responsive */
+  aspect-ratio: 1 / 1;        /* กลมชัวร์ */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+
+  /* ไล่สีแบบเนียน */
+  background:
+    radial-gradient(circle at 50% 50%,
+      rgba(244,114,182,0.55) 0%,
+      rgba(216,180,255,0.42) 30%,
+      rgba(129,140,248,0.35) 55%,
+      transparent 70%
+    );
+
+  /* ทำให้ฟุ้งนุ่ม */
+  filter: blur(80px);
+}
+
+/* บางเคส iOS จะยังเห็นขอบ ให้ mask เป็นวงกลมอีกรอบ */
+@supports (-webkit-mask-image: radial-gradient(circle, #000 60%, transparent 70%)) {
+  .hero-glow {
+    -webkit-mask-image: radial-gradient(circle, #000 62%, transparent 72%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+  }
 }
 
 /* --- Image --- */
@@ -48,7 +86,7 @@ img { max-width: 100%; height: auto; display: block; }
   max-width: 28rem;
   margin: 0 auto;
   position: relative;
-  z-index: 2;
+  z-index: 2; /* อยู่เหนือ glow */
   animation: swingImage 5s ease-in-out infinite;
   transform-origin:center;
 }
@@ -66,7 +104,7 @@ img { max-width: 100%; height: auto; display: block; }
   max-width: 100%;
 }
 
-/* Typing effect */
+/* Typing effect: ปรับจำนวนตัวอักษรได้ด้วยตัวแปร */
 .typing {
   --chars: 16; /* "Hello, I'm JeJey." ~16 */
   display: inline-block;

@@ -2,22 +2,21 @@ import React from 'react';
 import '../hero.css';
 import { Link } from 'react-router-dom';
 
-+ export const Hero = () => {
+export const Hero = () => {
   return (
     <>
       <section className="hero-section">
         <div className="hero-container">
           <div className="hero-left">
             <div className="hero-text-box">
-<span className="hero-name typing gradient-text">Hello, I'm JeJey.</span>              <p className="hero-quote">
+              {/* ถ้าจะเปลี่ยนจำนวนตัวอักษร ปรับ --chars ใน CSS ให้ตรง */}
+              <span className="hero-name typing gradient-text">Hello, I'm JeJey.</span>
+              <p className="hero-quote">
                 I recently graduated from Khon Kaen University, College of Computing.
               </p>
-              <li className='interest'>My Interest: </li>              <li >UX/UI Designer</li>              <li >Software Tester</li>              <li >Programmer</li>                    
             </div>
-            
-            
           </div>
-          
+
           <div className="hero-left">
             <div className="hero-image-wrapper">
               <img
@@ -26,25 +25,25 @@ import { Link } from 'react-router-dom';
                 className="hero-main-image"
               />
             </div>
-            
           </div>
-          
         </div>
-          <Link
-  to="/works"
-  className="moreproject"
-  onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
->
-  <span className="gradient-text">View All My Projects</span>
-  <span className="arrow-icon gradient-text">›</span>
-</Link>
+
+        <Link
+          to="/works"
+          className="moreproject"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
+        >
+          <span className="gradient-text">View All My Projects</span>
+          <span className="arrow-icon gradient-text">›</span>
+        </Link>
       </section>
-      
+
       <section className="hero-section">
         <div className="final-project-card-ex">
-          <h2 className="final-project-title gradient-text">
-            Experience - Teaching Assistant (TA)
-          </h2>
+          <div className="project-title-container">
+            <div className="ex-title-text">Experience - Teaching Assistant (TA)</div>
+          </div>
+
           <div className="final-project-content">
             <div className="final">
               <img
