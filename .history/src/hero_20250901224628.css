@@ -219,8 +219,6 @@
 
 
 @media (max-width: 767px) {
-    .hero-image-wrapper { overflow: hidden; contain: paint; }
-
   .hero-image-wrapper::before {
     width: 120%;
     height: 120%;

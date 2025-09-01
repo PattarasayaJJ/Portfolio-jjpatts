@@ -44,6 +44,7 @@ export function Aboutme() {
 
   const tester = [
     { name: '#Manual Testing', type: 'ux' },
+    { name: '#Automated Testing', type: 'ux' },
   ];
 
   return (

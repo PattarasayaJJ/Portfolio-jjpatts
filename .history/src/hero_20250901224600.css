@@ -219,16 +219,14 @@
 
 
 @media (max-width: 767px) {
-    .hero-image-wrapper { overflow: hidden; contain: paint; }
-
   .hero-image-wrapper::before {
     width: 120%;
     height: 120%;
     filter: blur(40px);
   }
   .hero-main-image {
-       max-width: 100%;
-
+    width: 90%;
+    max-width: 20rem;
   }
 
   .hero-text-box {
